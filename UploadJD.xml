@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Screenit App">
+
+	<test name="UploadJD file">
+
+
+
+		<parameter name="Emailid" value="san111@screenit.io" />
+
+		<parameter name="Password" value="Welcome@1" />
+		
+		<parameter name="screenshotName" value="loginwithvaliddata" />
+
+		<parameter name="file"
+			value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Java Developer.docx" />
+
+		<parameter name="minyear" value= "5 years" />
+
+		<parameter name= "maxyear" value= "10 years" />
+
+		<parameter name="primaryskill" value= "Core Java" />
+
+		<parameter name="secondaryskill" value= "Spring Boot" /> 
+
+		<parameter name="location" value= "Chennai" />
+
+		<parameter name="minsalary" value= "200000" />
+
+		<parameter name="maxsalary" value= "500000" />
+
+		<parameter name="vacancy" value="10" />
+
+		<parameter name="jobdescription" value="test" />
+
+		<parameter name="remark" value="NA" />
+		
+			<parameter name="screenshotName_1" value="verifypostcreatedornotwithfilledmandantoryfiled" />
+		
+		<parameter name="screenshotName_2" value="verifypostcreatedornotwithoutfilledmandantoryfiled" />
+		
+		<parameter name="title" value="Java" />
+		
+		<parameter name="date" value="20" />
+		
+		<parameter name="screenshotName_3" value="verifypostcreatedornotwithfilledAllthefiled" />
+
+		<classes>
+
+			<class name="com.Screenit.version3.Test.UploadJDForPostiveAndNegativeFlow" />
+
+		</classes>
+
+	</test> <!-- UploadIDFile -->
+
+	
+</suite> <!-- Screenit App -->

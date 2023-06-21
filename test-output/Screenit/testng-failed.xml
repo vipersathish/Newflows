@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Screenit]">
+  <test name="signupflow(failed)">
+    <parameter name="Emailid" value="s@scrrenii.io"/>
+    <parameter name="mobilenumber" value="6379015122"/>
+    <parameter name="URL" value="https://dev.screenit.io/#/Login_v3"/>
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.Screenit.version3.pages.SignUpPage">
+        <methods>
+          <include name="signup" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.pages.SignUpPage -->
+    </classes>
+  </test> <!-- signupflow(failed) -->
+</suite> <!-- Failed suite [Screenit] -->

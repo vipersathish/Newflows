@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Screenit App for Decline flow with After set availability">
+
+
+	<test name="Declined With After Setavailability Flow for IAAS ">
+
+
+
+		<parameter name="Emailid" value="san111@screenit.io" />
+
+		<parameter name="Password" value="Welcome@1" />
+
+		<parameter name="screenshotName" value="LoginwithValiddata" />
+
+		<parameter name="file"
+			value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Sathish.docx" />
+
+		<parameter name="Overallexp" value="10 years" />
+
+		<parameter name="months" value="5 months" />
+
+		<parameter name="primaryskill" value="Core Java" />
+
+		<parameter name="secondaryskill" value="Spring Boot" />
+
+		<parameter name="jobdescription" value="testing" />
+
+		<parameter name="remark" value="NA" />
+
+		<parameter name="screenshotName_1" value="PostCreatedorNot" />
+
+		<parameter name="flow" value="id" />
+
+		<parameter name="uploadResumefile"
+			value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Sathish - Copy - Copy.docx" />
+
+		<parameter name="screenshotName_2" value="ResumeUploadedorNot" />
+
+		<parameter name="interviewername" value="mrinalini" />
+
+		<parameter name="date" value="12" />
+
+		<parameter name="time" value="10" />
+
+		<parameter name="sec" value="00" />
+
+		<parameter name="preorsuf" value="am" />
+
+		<parameter name="screenshotName_3" value="setavailabilityCompletedorNot" />
+
+		<parameter name="interviewername_1" value="priya" />
+
+		<parameter name="date_1" value="11" />
+
+		<parameter name="time_1" value="30" />
+
+		<parameter name="sec_1" value="00" />
+
+		<parameter name="preorsuf_1" value="am" />
+
+		<parameter name="screenshotName_33" value="AnothersetavailabilityCompletedorNot" />
+		
+			<parameter name="screenshotName_4" value="checkschedulerequestpendingstatus" />
+		
+		<parameter name="screenshotName_5"
+			value="checkschedulerequestpendingstatusanothertime" />
+			
+		<parameter name="screenshotName_6" value="check schedule status" />
+		
+		<parameter name="screenshotName_7" value="check feedback pending status" />
+		
+		<parameter name="screenshotName_8" value="check feeback results" />
+		
+		<parameter name="screenshotName_9" value="check sit score status" />
+		
+		<parameter name="screenshotName_10" value="check selected or rejected status" />
+		
+
+		<classes>
+
+			<class name="com.Screenit.version3.Test.DeclineWithManualScheduleFlowForIAAS" />
+
+		</classes>
+
+	</test> <!-- UploadIDFile -->
+</suite> <!-- Screenit App -->

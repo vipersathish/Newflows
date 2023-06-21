@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Screen App for jd flow]">
+  <test name="selected flow for jd 1 st round(failed)">
+    <parameter name="screenshotName_19" value="verify feeback result for second round"/>
+    <parameter name="Emailid" value="san111@screenit.io"/>
+    <parameter name="screenshotName_17" value="verify schedule status for second round"/>
+    <parameter name="screenshotName_18" value="verify feed back pending statsus for second round"/>
+    <parameter name="screenshotName_15" value="verify schedule req pending for second round with sec time"/>
+    <parameter name="screenshotName_16" value="verify selected interviewers for second round with sec time"/>
+    <parameter name="screenshotName_13" value="verify schedule req pending for second round"/>
+    <parameter name="screenshotName_14" value="verify selected interviewers for second round"/>
+    <parameter name="interviewername" value="priya"/>
+    <parameter name="screenshotName_3" value="verify confirmation bending status for first round"/>
+    <parameter name="screenshotName_2" value="verify shortlisted message for first round"/>
+    <parameter name="screenshotName_5" value="verify schedule request pending status for first time"/>
+    <parameter name="screenshotName_4" value="verify schedule intiated status for first round"/>
+    <parameter name="screenshotName_1" value="verify sit score above six for first round"/>
+    <parameter name="screenshotName_0" value="loginwithvaiddata"/>
+    <parameter name="screenshotName_11" value="verify feeback result for first round"/>
+    <parameter name="screenshotName_12" value="verify sit score status for first round"/>
+    <parameter name="text" value="Technical"/>
+    <parameter name="screenshotName_10" value="verify feed back pending statsus for first round"/>
+    <parameter name="screenshotName_7" value="verify schedule request pending statsus for second time"/>
+    <parameter name="screenshotName_6" value="verify selected list of interviewers 1"/>
+    <parameter name="flow" value="jd"/>
+    <parameter name="screenshotName_9" value="verify schedule status for first round"/>
+    <parameter name="Password" value="Welcome@1"/>
+    <parameter name="screenshotName_8" value="verify selected list of interviewers 2"/>
+    <parameter name="screenshotName_144" value="verifyschedule reinitiated status"/>
+    <parameter name="name" value="sathish"/>
+    <parameter name="screenshotName_20" value="verify sit score status for second round"/>
+    <classes>
+      <class name="com.Screenit.version3.Test.SelectedAndRejectedAndDeclineAndRescheduleFlowforJd">
+        <methods>
+          <include name="declinewithSetavailabilityFlow" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="checkProfileMatchedCountAndSelectedFlowForJD" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.Test.SelectedAndRejectedAndDeclineAndRescheduleFlowforJd -->
+    </classes>
+  </test> <!-- selected flow for jd 1 st round(failed) -->
+</suite> <!-- Failed suite [Screen App for jd flow] -->

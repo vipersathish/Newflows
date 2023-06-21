@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Screenit App">
+	
+
+	<test name="EditUploadJd file">
+
+		<parameter name="Browser" value="chrome" />
+
+		<parameter name="URL" value="https://test.screenit.io" />
+
+		<parameter name="Emailid" value="san1@screenit.io" />
+
+		<parameter name="Password" value="Welcome@1" />
+		
+		<parameter name="flow" value="jd"/>
+
+		<parameter name="year" value="8 years" />
+
+		<parameter name="maxyears" value="15 years" />
+
+		<parameter name="primaryskill" value="Core Java" />
+
+		<parameter name="secondaryskill" value="Spring Boot" />
+
+		<parameter name="location" value="Chennai" />
+
+		<parameter name="minsalary" value="200000" />
+
+		<parameter name="maxsalary" value="500000" />
+
+		<parameter name="vacany" value="10" />
+
+		<parameter name="jobdescription" value="test" />
+
+		<parameter name="remark" value="NA" />
+
+
+
+		<classes>
+
+			<class name="com.Screenit.version3.pages.EditUploadJD" />
+
+		</classes>
+
+
+
+
+	</test> <!-- EditID -->
+</suite> <!-- Screenit App -->

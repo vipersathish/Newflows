@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Screenit App (0)]">
+  <test thread-count="5" name="Java developer post with check positive and negative scenerio(failed)">
+    <parameter name="secondaryskill_2" value="Agile Methodologies"/>
+    <parameter name="date" value="31"/>
+    <parameter name="Emailid" value="san111@screenit.io"/>
+    <parameter name="jobdescription" value="testing"/>
+    <parameter name="jobdescription_1" value="testing"/>
+    <parameter name="jobdescription_2" value="testing"/>
+    <parameter name="remark" value="NA"/>
+    <parameter name="title" value="Selenium"/>
+    <parameter name="secondaryskill" value="Agile Methodologies"/>
+    <parameter name="screenshotName_3" value="PostCreatedwithFilledAllTheFieldScreenshot"/>
+    <parameter name="screenshotName_2" value="PostNotCreatedwithoutFilledMandatoryFieldScreenshot"/>
+    <parameter name="file" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Java Developer.docx"/>
+    <parameter name="remark_2" value="NA"/>
+    <parameter name="remark_1" value="NA"/>
+    <parameter name="primaryskill_2" value="Core Java,JIRA"/>
+    <parameter name="screenshotName_1" value="PostCreatedWithMandatoryFieldScreenshot"/>
+    <parameter name="primaryskill_1" value="Core Java,JIRA"/>
+    <parameter name="months_1" value="5 months"/>
+    <parameter name="months_2" value="5 months"/>
+    <parameter name="Password" value="Welcome@1"/>
+    <parameter name="secondaryskill_1" value="Agile Methodologies"/>
+    <parameter name="months" value="5 months"/>
+    <parameter name="primaryskill" value="Core Java,JIRA"/>
+    <parameter name="file_1" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Java Developer.docx"/>
+    <parameter name="file_2" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Java Developer.docx"/>
+    <parameter name="Overallexp" value="10 years"/>
+    <parameter name="screenshotName" value="Loginscreenshots"/>
+    <parameter name="Overallexp_2" value="10 years"/>
+    <parameter name="Overallexp_1" value="10 years"/>
+    <classes>
+      <class name="com.Screenit.version3.Test.UploadIDTestForPostiveAndNegativeFlow">
+        <methods>
+          <include name="tearDown"/>
+          <include name="CreateInterviewerDescriptionIDWithClickResetButtonAndFilledAllTheField" invocation-numbers="0"/>
+          <include name="loginFunctionality" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.Test.UploadIDTestForPostiveAndNegativeFlow -->
+    </classes>
+  </test> <!-- Java developer post with check positive and negative scenerio(failed) -->
+</suite> <!-- Failed suite [Screenit App (0)] -->

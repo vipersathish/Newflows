@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Upload Id for Screenit App">
+
+	<test name="Java developer post with check positive and negative scenerio">
+
+
+
+		<parameter name="Emailid" value="san111@screenit.io" />
+
+		<parameter name="Password" value="Welcome@1" />
+
+		<parameter name="screenshotName" value="Loginscreenshots" />
+
+		<parameter name="file"
+			value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Java Developer.docx" />
+
+		<parameter name="Overallexp" value="10 years" />
+
+		<parameter name="months" value="5 months" />
+
+		<parameter name="primaryskill" value="Core Java,JIRA" />
+
+		<parameter name="secondaryskill" value="Agile Methodologies" />
+
+		<parameter name="jobdescription" value="testing" />
+
+		<parameter name="remark" value="NA" />
+
+		<parameter name="screenshotName_1" value="PostCreatedWithMandatoryFieldScreenshot" />
+
+		<parameter name="file_1"
+			value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Java Developer.docx" />
+
+		<parameter name="Overallexp_1" value="10 years" />
+
+		<parameter name="months_1" value="5 months" />
+
+		<parameter name="primaryskill_1" value="Core Java,JIRA" />
+
+		<parameter name="secondaryskill_1" value="Agile Methodologies" />
+
+		<parameter name="jobdescription_1" value="testing" />
+
+		<parameter name="remark_1" value="NA" />
+
+		<parameter name="screenshotName_2"
+			value="PostNotCreatedwithoutFilledMandatoryFieldScreenshot" />
+
+		<parameter name="file_2"
+			value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Java Developer.docx" />
+
+		<parameter name="Overallexp_2" value="10 years" />
+
+		<parameter name="months_2" value="5 months" />
+
+		<parameter name="primaryskill_2" value="Core Java,JIRA" />
+
+		<parameter name="secondaryskill_2" value="Agile Methodologies" />
+
+		<parameter name="jobdescription_2" value="testing" />
+
+		<parameter name="remark_2" value="NA" />
+
+		<parameter name="title" value="Selenium" />
+
+		<parameter name="date" value="31" />
+
+		<parameter name="screenshotName_3" value="PostCreatedwithFilledAllTheFieldScreenshot" />
+
+		<classes>
+
+			<class
+				name="com.Screenit.version3.Test.UploadIDTestForPostiveAndNegativeFlow" />
+
+		</classes>
+
+	</test> <!-- UploadIDFile -->
+
+
+
+</suite> <!-- Screenit App -->

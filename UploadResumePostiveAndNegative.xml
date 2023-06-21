@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Upload Resume for Screenit App">
+
+
+   <test  name="UploadSingleResume with EmailID and mobile number(.Docx) and NegativeResume for above 3mb">
+  
+
+ 
+ <parameter name= "Emailid"  value = "san111@screenit.io" />
+ 
+ <parameter name = "Password"  value = "Welcome@1"/>
+ 
+ <parameter name="screenshotName" value= "loginScreenshot" />
+ 
+ <parameter name="flow"    value= "id"/>
+ 
+ <parameter name=  "file"    value= "C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenITFlow.DDD\\sample\\samplejd\\Sathish.docx"/>
+ 
+ <parameter name="screenshotName_1" value= "ResumeUploadedWithPostiveFileScreenshots" />
+ 
+ <parameter name="file1" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Python - Fresher (Puvi).docx"/>
+ 
+ <parameter name="screenshotName_2" value= "ResumeUploadedWithNegativeFileScreenshots" />
+ 
+ 
+  <classes>
+    
+      <class name="com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow"/>
+      
+    </classes>
+  
+  
+  </test> <!-- UploadSingleResume -->
+  
+  <test  name="UploadSingleResume without EmailID and mobile number(.Docx) and NegativeResume for .png ">
+  
+
+ 
+ <parameter name= "Emailid"  value = "san111@screenit.io" />
+ 
+ <parameter name = "Password"  value = "Welcome@1"/>
+ 
+  <parameter name="screenshotName" value= "loginScreenshot" />
+ 
+ <parameter name=  "flow" value=   "id"/>
+ 
+ <parameter name=  "file"    value= "C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Automation Testing.docx"/>
+ 
+  <parameter name="screenshotName_1" value= "ResumeUploadedWithPostiveFileScreenshots" />
+ 
+ <parameter name= "file1" value= "C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Candidate Edit details for single post.png" />
+ 
+  <parameter name="screenshotName_2" value= "ResumeUploadedWithNegativeFileScreenshots" />
+ 
+  <classes>
+    
+      <class name="com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow"/>
+      
+    </classes>
+  
+  
+  </test> <!-- UploadSingleResume -->
+  
+  
+   <test  name="UploadSingleResume with EmailID and mobile number(.pdf) and NegativeResume for zipfile">
+  
+  
+ 
+ <parameter name= "Emailid"  value = "san111@screenit.io" />
+ 
+ <parameter name = "Password"  value = "Welcome@1"/>
+ 
+ <parameter name="screenshotName" value= "loginScreenshot" />
+ 
+ <parameter name="flow"    value= "id"/>
+ 
+ <parameter name=  "file"    value= "C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Mrinalini V.pdf"/>
+ 
+   <parameter name="screenshotName_1" value= "ResumeUploadedWithPostiveFileScreenshots" />
+ 
+ <parameter  name="file1" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Today Demo Automation Report.zip" />
+ 
+ <parameter name="screenshotName_2" value= "ResumeUploadedWithNegativeFileScreenshots" />
+ 
+  <classes>
+    
+      <class name="com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow"/>
+      
+    </classes>
+  
+  
+  </test> <!-- UploadSingleResume -->
+  
+  <test  name="UploadSingleResume without EmailID and mobile number(.pdf) and NegativeResume for excel file">
+  
+
+ 
+ <parameter name= "Emailid"  value = "san111@screenit.io" />
+ 
+ <parameter name = "Password"  value = "Welcome@1"/>
+ 
+ <parameter name="screenshotName" value= "loginScreenshot" />
+ 
+ <parameter name=  "flow" value=   "id"/>
+ 
+ <parameter name=  "file"    value= "C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Automation Testing.pdf"/>
+ 
+   <parameter name="screenshotName_1" value= "ResumeUploadedWithPostiveFileScreenshots" />
+ 
+ <parameter  name="file1" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\MobileFullTestCases.xlsx" />
+ 
+ <parameter name="screenshotName_2" value= "ResumeUploadedWithNegativeFileScreenshots" />
+ 
+  <classes>
+    
+      <class name="com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow"/>
+      
+    </classes>
+  
+  
+  </test> <!-- UploadSingleResume -->
+  
+  
+  <test  name="Upload candidate resume with 2.5 mb and NegativeResume for textfile ">
+  
+
+ 
+ <parameter name= "Emailid"  value = "san111@screenit.io" />
+ 
+ <parameter name = "Password"  value = "Welcome@1"/>
+ 
+ <parameter name="screenshotName" value= "loginScreenshot" />
+ 
+ <parameter name=  "flow" value=   "id"/>
+ 
+ <parameter name=  "file"    value= "C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Python - Fresher (Puvi)-compressed.pdf"/>
+ 
+ <parameter name="screenshotName_1" value= "ResumeUploadedWithPostiveFileScreenshots" />
+ 
+ <parameter  name="file1" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\ExcelReader.txt" />
+ 
+ <parameter name="screenshotName_2" value= "ResumeUploadedWithNegativeFileScreenshots" />
+ 
+  <classes>
+    
+      <class name="com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow"/>
+      
+    </classes>
+  
+  
+  </test> <!-- UploadSingleResume -->
+  
+  
+  
+</suite> <!-- Screenit App -->

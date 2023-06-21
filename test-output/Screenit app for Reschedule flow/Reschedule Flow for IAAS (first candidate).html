@@ -1,0 +1,273 @@
+<html>
+<head>
+<title>TestNG:  Reschedule Flow for IAAS (first candidate)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Reschedule Flow for IAAS (first candidate)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 14 13:11:09 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>926 seconds (926212 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Screenit.version3.Test.RescheduleFlowForIAAS.CheckRescheduleWithManualScheduleStatus()'><b>CheckRescheduleWithManualScheduleStatus</b><br>Test class: com.Screenit.version3.Test.RescheduleFlowForIAAS<br>Parameters: checkReschedulestatusafterlistofinterviewers, checkManualReschedulerequeststatus, checkmanualReschedulestatusafterlistofinterviewers, checkReschedulestatus, checkfeedbackpendingstatus, checkfeedbackResultstatus, checksitscorestatus<br/>
+<a href="#Output-816804727" onClick='toggleBox("Output-816804727", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-816804727" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-816804727">
+status should be--Re-Schedule Request Pending<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot7539988689462154120.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot7539988689462154120.png' height='100' width='100'/> </a><br/>
+first interviewer lists----Interviewer Name Status
+Teat Gth Pending<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot7330136400966005529.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot7330136400966005529.png' height='100' width='100'/> </a><br/>
+resechedule pending status is not workingjava.lang.NullPointerException<br/>
+reschedule request status is not clickable<br/>
+first interviewer lists----<br/>
+interver list is not showingorg.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=108.0.5359.95)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TTS-SCRIT-5', ip: '10.10.12.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\TTS-USER\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64744}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ffbe06f26976857389585da29030cf6<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot6706020031992198664.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot6706020031992198664.png' height='100' width='100'/> </a><br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot4529637289435034401.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot4529637289435034401.png' height='100' width='100'/> </a><br/>
+the status should be Rescheduled<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot1135127122717975365.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot1135127122717975365.png' height='100' width='100'/> </a><br/>
+the status should be Feedback Pending<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot8076234571448501410.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot8076234571448501410.png' height='100' width='100'/> </a><br/>
+Results--------Candidate Name
+
+Sathish
+
+Designation
+
+Java Developer
+
+Email
+
+sathish.s@truetechsolutions.in
+Feedback status
+
+pending
+
+Interview status
+
+Completed
+
+Interview duration
+
+00m 05s
+Interviewer Details
+Interviewer Name Teat Gth
+Interview Date 14 Jun 2023
+Interview Time 01:00 pm - 02:00 pm
+Mode of Interview Video<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot8122606006535413948.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot8122606006535413948.png' height='100' width='100'/> </a><br/>
+ the status should be InComplete<br/>
+ the status should be InComplete<br/>
+</div>
+</td>
+<td></td>
+<td>419</td>
+<td>com.Screenit.version3.Test.RescheduleFlowForIAAS@4dfa3a9d</td></tr>
+<tr>
+<td title='com.Screenit.version3.Test.RescheduleFlowForIAAS.CreateInterviewerDescriptionIDwithclickPostButtonAndFilledTheMandatoryField()'><b>CreateInterviewerDescriptionIDwithclickPostButtonAndFilledTheMandatoryField</b><br>Test class: com.Screenit.version3.Test.RescheduleFlowForIAAS<br>Test method: When clicking post button with filled the mandatory field<br>Parameters: 10 years, 5 months, Core Java, Spring Boot, testing, NA, PostCreatedorNot<br/>
+<a href="#Output-1251967187" onClick='toggleBox("Output-1251967187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1251967187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1251967187">
+Title of the post popup name------Create Interviewer Description ID<br/>
+Autopopulate name is working fine<br/>
+Autopopulate date validity is working fine<br/>
+sucessfully highlighted the overall experience-----Select Year *
+1 year
+2 years
+3 years
+4 years
+5 years
+6 years
+7 years
+8 years
+9 years
+10 years
+11 years
+12 years
+13 years
+14 years
+15 years
+16 years
+17 years
+18 years
+19 years
+20 years
+21 years<br/>
+sucessfully highlighted the months-----Select Month *
+0 month
+1 month
+2 months
+3 months
+4 months
+5 months
+6 months
+7 months
+8 months
+9 months
+10 months
+11 months<br/>
+Selected primary skill are -----Core Java<br/>
+selected secondary skills are :Spring Boot<br/>
+Auto populated resume attachment is working fine-----Sathish.docx<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot5161687780519597150.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot5161687780519597150.png' height='100' width='100'/> </a><br/>
+Post should be created successfully<br/>
+</div>
+</td>
+<td></td>
+<td>102</td>
+<td>com.Screenit.version3.Test.RescheduleFlowForIAAS@4dfa3a9d</td></tr>
+<tr>
+<td title='com.Screenit.version3.Test.RescheduleFlowForIAAS.ScheduleWithRescheduleButtonFlow()'><b>ScheduleWithRescheduleButtonFlow</b><br>Test class: com.Screenit.version3.Test.RescheduleFlowForIAAS<br>Parameters: checkschedulerequestpendingstatus, checkschedulerequestpendingstatusanothertime, check schedule status, check Reschedule popup , check reschedule request pending status, Personal emergency, Reschedule beacuse personal emergancy, 14, 1, 00, pm<br/>
+<a href="#Output-834562889" onClick='toggleBox("Output-834562889", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-834562889" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-834562889">
+status should be--Schedule Request Pending<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot3271239728504985317.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot3271239728504985317.png' height='100' width='100'/> </a><br/>
+first interviewer lists----Interviewer Name Status
+Teat Gth Pending<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot6082692062221126759.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot6082692062221126759.png' height='100' width='100'/> </a><br/>
+first interviewer lists----Interviewer Name Status
+Teat Gth Accepted<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot8679838448401041434.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot8679838448401041434.png' height='100' width='100'/> </a><br/>
+the status should be Scheduled<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot6312061362555693728.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot6312061362555693728.png' height='100' width='100'/> </a><br/>
+popup Title is displayed<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot4262074203739798871.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot4262074203739798871.png' height='100' width='100'/> </a><br/>
+</div>
+</td>
+<td></td>
+<td>252</td>
+<td>com.Screenit.version3.Test.RescheduleFlowForIAAS@4dfa3a9d</td></tr>
+<tr>
+<td title='com.Screenit.version3.Test.RescheduleFlowForIAAS.SelectSetavailability()'><b>SelectSetavailability</b><br>Test class: com.Screenit.version3.Test.RescheduleFlowForIAAS<br>Parameters: teat, 14, 12, 00, pm, setavailabilityCompletedorNot<br/>
+<a href="#Output-173259631" onClick='toggleBox("Output-173259631", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-173259631" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-173259631">
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot2044621637821846990.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot2044621637821846990.png' height='100' width='100'/> </a><br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.Screenit.version3.Test.RescheduleFlowForIAAS@4dfa3a9d</td></tr>
+<tr>
+<td title='com.Screenit.version3.Test.RescheduleFlowForIAAS.UploadIdFile()'><b>UploadIdFile</b><br>Test class: com.Screenit.version3.Test.RescheduleFlowForIAAS<br>Parameters: C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Sathish.docx<br/>
+<a href="#Output-50720817" onClick='toggleBox("Output-50720817", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-50720817" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-50720817">
+Title of the popup name--------Interviewer Description ID<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.Screenit.version3.Test.RescheduleFlowForIAAS@4dfa3a9d</td></tr>
+<tr>
+<td title='com.Screenit.version3.Test.RescheduleFlowForIAAS.UploadSingleResumeWithPostive()'><b>UploadSingleResumeWithPostive</b><br>Test class: com.Screenit.version3.Test.RescheduleFlowForIAAS<br>Parameters: id, C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Sathish - Copy - Copy.docx, ResumeUploadedorNot<br/>
+<a href="#Output-47918293" onClick='toggleBox("Output-47918293", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-47918293" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-47918293">
+when select id dropdown the title of the text is Recent Interviewer Descriptions<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot925909451553914468.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot925909451553914468.png' height='100' width='100'/> </a><br/>
+Candidate Resume Uploaded Successfully<br/>
+The first status should be :----New<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.Screenit.version3.Test.RescheduleFlowForIAAS@4dfa3a9d</td></tr>
+<tr>
+<td title='com.Screenit.version3.Test.RescheduleFlowForIAAS.loginFunctionality()'><b>loginFunctionality</b><br>Test class: com.Screenit.version3.Test.RescheduleFlowForIAAS<br>Parameters: san111@screenit.io, Welcome@1, LoginwithValiddata<br/>
+<a href="#Output-593768538" onClick='toggleBox("Output-593768538", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-593768538" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-593768538">
+Enter the Maild---------san111@screenit.io<br/>
+Enter the Password-----Welcome@1<br/>
+click the submit button<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\Temp\screenshot2897550042151864246.png'> <img src='C:\Users\TTS-USER\AppData\Local\Temp\screenshot2897550042151864246.png' height='100' width='100'/> </a><br/>
+succesfully login and navigate to the dashboard pagehttps://demo.screenit.io/#/dashboard_v3<br/>
+</div>
+</td>
+<td></td>
+<td>78</td>
+<td>com.Screenit.version3.Test.RescheduleFlowForIAAS@4dfa3a9d</td></tr>
+</table><p>
+</body>
+</html>

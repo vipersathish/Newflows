@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Screenit App for SamePanels">
+
+<test name="Selected panels are already Blocked same timings ">
+
+
+
+		<parameter name="Emailid" value="san111@screenit.io" />
+
+		<parameter name="Password" value="Welcome@1" />
+
+		<parameter name="screenshotName" value="LoginwithValiddata" />
+
+		<parameter name="file"
+			value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Java Developer.docx" />
+
+		<parameter name="Overallexp" value="10 years" />
+
+		<parameter name="months" value="5 months" />
+
+		<parameter name="primaryskill" value="Core Java" />
+
+		<parameter name="secondaryskill" value="Spring Boot" />
+
+		<parameter name="jobdescription" value="testing" />
+
+		<parameter name="remark" value="NA" />
+
+		<parameter name="screenshotName_1" value="PostCreatedorNot" />
+
+		<parameter name="flow" value="id" />
+
+		<parameter name="uploadResumefile"
+			value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Sathish - Copy - Copy.docx" />
+
+		<parameter name="screenshotName_2" value="ResumeUploadedorNot" />
+
+		<parameter name="interviewername" value="mrinalini" />
+
+		<parameter name="date" value="14" />
+
+		<parameter name="time" value="6" />
+
+		<parameter name="sec" value="00" />
+
+		<parameter name="preorsuf" value="pm" />
+
+		<parameter name="screenshotName_3" value="setavailabilityCompletedorNot" />
+		
+		<parameter name="uploadResumefile_1" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Mrinalini V.pdf"/>
+
+     
+		<parameter name="screenshotName_4" value="checkschedulerequestpendingstatus" />
+		
+		<parameter name="screenshotName_5"
+			value="check schedule status" />
+			
+		<parameter name="screenshotName_6" value="check uploaded file" />
+		
+		<parameter name="screenshotName_7" value="check same setavailability" />
+		
+		<parameter name="screenshotName_8" value="check pending status sec candidate" />
+		
+		<parameter name="screenshotName_9" value="check already blocked status" />
+		
+		
+
+<classes>
+
+			<class name="com.Screenit.version3.Test.SelectedPanelsAlreadyBlockedForSameTimingFlowForIAAS" />
+
+		</classes>
+
+</test> <!-- UploadIDFile -->
+
+</suite> <!-- Screenit App for SamePanels -->

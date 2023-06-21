@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Screenit App for Candidate edit Details">
+ 
+  <test  name="Edit candidate details">
+  
+
+ 
+ <parameter name= "Emailid"  value = "san111@screenit.io" />
+ 
+ <parameter name = "Password"  value = "Welcome@1"/>
+ 
+ <parameter name="screenshotName" value="loginwithValiddata" />
+ 
+ <parameter name="flow"    value= "id"/>
+ 
+ <parameter name=  "file"    value= "C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Java Developer.docx"/> 
+ 
+  <parameter name="screenshotName_1" value="UploadResumewithvalidfile" />
+ 
+ <parameter name= "candiname" value=  "sathish" />
+ 
+  <parameter name= "candiLastname" value=  "Kumar" />
+  
+   <parameter name= "candiMailId" value=  "sathish.s@screenit.io" />
+   
+    <parameter name= "candiPhoneno" value=  "06379015136" />
+    
+    <parameter name="screenshotName_2" value="EditCandidatewithvalidData" />
+    
+     <parameter name= "candiname_1" value=  " " />
+ 
+  <parameter name= "candiLastname_1" value=  " " />
+  
+   <parameter name= "candiMailId_1" value=  " " />
+   
+    <parameter name= "candiPhoneno_1" value=  " " />
+    
+    <parameter name="screenshotName_3" value="Edit candidatewithoutfilled data" />
+ 
+ 
+  <classes>
+    
+      <class name="com.Screenit.version3.Test.CandidateEditPageTestForUploadIDPostiveAndNegativeFlow"/>
+      
+    </classes>
+  
+  
+  </test> <!-- UploadSingleResume -->
+ 
+</suite> <!-- Screen App -->

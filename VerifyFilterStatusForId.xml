@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Screen app for filter search by status">
+
+  <test  name="search by status">
+  
+  <parameter name="Emailid" value="san111@screenit.io" />
+
+		<parameter name="Password" value="Welcome@1" />
+		
+		<parameter name="flow" value="id"/>
+		
+		<parameter name="text" value="Schedule Request Pending" />
+		
+		<parameter name="text1" value="Scheduled" />
+		
+		<parameter name="text2" value= "New" />
+		
+		<parameter name="screenshotName" value="firstsearchstatus" />
+		
+		<parameter name="screenshotName_1" value="Secondsearchstatus" />
+		
+		<parameter name="screenshotName_2" value="Thirdsearchstatus" />
+		
+		<parameter name="sit" value="9" />
+		
+		<parameter name="screenshotName_3" value="verify sit score status" />
+  
+  <classes>
+  
+  <class name= "com.Screenit.version3.Test.FilterAndScoreTestForIdFlow" />
+ 
+  
+  </classes>
+  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

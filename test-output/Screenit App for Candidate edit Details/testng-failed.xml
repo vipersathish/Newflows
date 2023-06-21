@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Screenit App for Candidate edit Details]">
+  <test thread-count="5" name="Edit candidate details(failed)">
+    <parameter name="candiPhoneno" value="06379015136"/>
+    <parameter name="Emailid" value="san111@screenit.io"/>
+    <parameter name="candiMailId_1" value=" "/>
+    <parameter name="screenshotName_3" value="Edit candidatewithoutfilled data"/>
+    <parameter name="screenshotName_2" value="EditCandidatewithvalidData"/>
+    <parameter name="candiPhoneno_1" value=" "/>
+    <parameter name="file" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Java Developer.docx"/>
+    <parameter name="screenshotName" value="loginwithValiddata"/>
+    <parameter name="screenshotName_1" value="UploadResumewithvalidfile"/>
+    <parameter name="candiname" value="sathish"/>
+    <parameter name="candiMailId" value="sathish.s@screenit.io"/>
+    <parameter name="candiLastname" value="Kumar"/>
+    <parameter name="candiname_1" value=" "/>
+    <parameter name="flow" value="id"/>
+    <parameter name="candiLastname_1" value=" "/>
+    <parameter name="Password" value="Welcome@1"/>
+    <classes>
+      <class name="com.Screenit.version3.Test.CandidateEditPageTestForUploadIDPostiveAndNegativeFlow">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="CandidateEditProfileWithMandatoryField" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.Test.CandidateEditPageTestForUploadIDPostiveAndNegativeFlow -->
+    </classes>
+  </test> <!-- Edit candidate details(failed) -->
+</suite> <!-- Failed suite [Screenit App for Candidate edit Details] -->

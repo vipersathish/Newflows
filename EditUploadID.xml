@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Screenit App">
+
+ <test  name="EditUploadId file">
+  
+ <parameter name = "Browser"  value= "chrome"/>
+ 
+ <parameter name= "URL" value = "https://demo.screenit.io"/>
+ 
+ <parameter name= "Emailid"  value = "san111@screenit.io" />
+ 
+ <parameter name = "Password"  value = "Welcome@1"/>
+ 
+ <parameter name="flow" value="ID"/>
+ 
+ <parameter name= "candyear" value= "12 years" />
+ 
+ <parameter name = "candmonth" value= "10 months" />
+ 
+ <parameter name = "primaryskill"  value= "Core Java" />
+ 
+<parameter name = "secondaryskill" value=  "Spring Boot" />
+ 
+  <parameter name= "jobdescription"  value= "editid" />
+  
+  <parameter name= "remark" value = "noo" />
+  
+   <classes>
+    
+      <class name="com.Screenit.version3.pages.EditUploadID"/>
+      
+    </classes>
+  
+
+
+  
+  </test> <!-- EditID -->
+</suite> <!-- Screenit App -->

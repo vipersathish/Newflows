@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Screenit APP for Cancel flow with Open Status">
+
+	<test name="Cancel Flow for IAAS (first candidate)">
+
+
+		<parameter name="Emailid" value="san111@screenit.io" />
+
+		<parameter name="Password" value="Welcome@1" />
+
+		<parameter name="screenshotName" value="LoginwithValiddata" />
+
+		<parameter name="file"
+			value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Sathish.docx" />
+
+		<parameter name="Overallexp" value="10 years" />
+
+		<parameter name="months" value="5 months" />
+
+		<parameter name="primaryskill" value="Core Java" />
+
+		<parameter name="secondaryskill" value="Spring Boot" />
+
+		<parameter name="jobdescription" value="testing" />
+
+		<parameter name="remark" value="NA" />
+
+		<parameter name="screenshotName_1" value="PostCreatedorNot" />
+
+		<parameter name="flow" value="id" />
+
+		<parameter name="uploadResumefile"
+			value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Sathish - Copy - Copy.docx" />
+
+		<parameter name="screenshotName_2" value="ResumeUploadedorNot" />
+
+		<parameter name="interviewername" value="mrinalini" />
+
+		<parameter name="date" value="17" />
+
+		<parameter name="time" value="3" />
+
+		<parameter name="sec" value="30" />
+
+		<parameter name="preorsuf" value="pm" />
+
+		<parameter name="screenshotName_3" value="setavailabilityCompletedorNot" />
+
+		<parameter name="screenshotName_4" value="checkschedulerequestpendingstatus" />
+
+		<parameter name="screenshotName_5"
+			value="checkschedulerequestpendingstatusanothertime" />
+
+		<parameter name="screenshotName_6" value="check schedule status" />
+
+		<parameter name="screenshotName_66" value="check Cancel popup " />
+
+		<parameter name="screenshotName_666" value="check open status" />
+
+		<parameter name="Reason" value="Personal emergency" />
+
+		<parameter name="comment" value="Reschedule beacuse personal emergancy" />
+		
+		<parameter name="interviewername_1" value="priya" />
+
+		<parameter name="date_1" value="12" />
+
+		<parameter name="time_1" value="6" />
+
+		<parameter name="sec_1" value="00" />
+
+		<parameter name="preorsuf_1" value="pm" />
+		
+		<parameter name="screenshotName_7" value="checkanothersetavailability" />
+	
+		<parameter name="screenshotName_8" value="checkopenstatusafterlistofinterviewers " />
+
+		<parameter name="screenshotName_9" value="checkopenstatusafterverifyschedulereqpendingstatus" />
+
+		<parameter name="screenshotName_10" value="checkopenstatusafterschedulestatus" />
+
+		<parameter name="screenshotName_11" value="checkopenstatusafterfeedbackResults" />
+		
+		<parameter name="screenshotName_12" value="checkopenstatusaftersitscore" />
+		
+		
+
+		<classes>
+
+			<class name="com.Screenit.version3.Test.CancelFlowForIAAS" />
+
+		</classes>
+
+	</test> <!-- UploadIDFile -->
+
+</suite> <!-- Screenit APP -->

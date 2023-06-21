@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Screenit app for Reschedule flow]">
+  <test name="Reschedule Flow for IAAS (first candidate)(failed)">
+    <parameter name="date" value="14"/>
+    <parameter name="sec_1" value="30"/>
+    <parameter name="Emailid" value="san111@screenit.io"/>
+    <parameter name="jobdescription" value="testing"/>
+    <parameter name="screenshotName_15" value="checksitscorestatus"/>
+    <parameter name="screenshotName_13" value="checkfeedbackpendingstatus"/>
+    <parameter name="screenshotName_14" value="checkfeedbackResultstatus"/>
+    <parameter name="remark" value="NA"/>
+    <parameter name="interviewername" value="mrinalini"/>
+    <parameter name="preorsuf" value="pm"/>
+    <parameter name="secondaryskill" value="Spring Boot"/>
+    <parameter name="Reason" value="Personal emergency"/>
+    <parameter name="sec" value="00"/>
+    <parameter name="screenshotName_3" value="setavailabilityCompletedorNot"/>
+    <parameter name="screenshotName_2" value="ResumeUploadedorNot"/>
+    <parameter name="date_1" value="14"/>
+    <parameter name="screenshotName_5" value="checkschedulerequestpendingstatusanothertime"/>
+    <parameter name="file" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Sathish.docx"/>
+    <parameter name="screenshotName_4" value="checkschedulerequestpendingstatus"/>
+    <parameter name="time_1" value="12"/>
+    <parameter name="screenshotName_1" value="PostCreatedorNot"/>
+    <parameter name="interviewername_1" value="priya"/>
+    <parameter name="screenshotName_11" value="checkmanualReschedulestatusafterlistofinterviewers"/>
+    <parameter name="screenshotName_12" value="checkReschedulestatus"/>
+    <parameter name="screenshotName_10" value="checkManualReschedulerequeststatus"/>
+    <parameter name="screenshotName_7" value="check Reschedule popup "/>
+    <parameter name="screenshotName_6" value="check schedule status"/>
+    <parameter name="flow" value="id"/>
+    <parameter name="uploadResumefile" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Sathish - Copy - Copy.docx"/>
+    <parameter name="screenshotName_9" value="checkReschedulestatusafterlistofinterviewers"/>
+    <parameter name="Password" value="Welcome@1"/>
+    <parameter name="screenshotName_8" value="check reschedule request pending status"/>
+    <parameter name="months" value="5 months"/>
+    <parameter name="primaryskill" value="Core Java"/>
+    <parameter name="preorsuf_1" value="pm"/>
+    <parameter name="Overallexp" value="10 years"/>
+    <parameter name="screenshotName" value="LoginwithValiddata"/>
+    <parameter name="comment" value="Reschedule beacuse personal emergancy"/>
+    <parameter name="time" value="12"/>
+    <classes>
+      <class name="com.Screenit.version3.Test.RescheduleFlowForIAAS">
+        <methods>
+          <include name="ScheduleWithRescheduleButtonFlow" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.Test.RescheduleFlowForIAAS -->
+    </classes>
+  </test> <!-- Reschedule Flow for IAAS (first candidate)(failed) -->
+</suite> <!-- Failed suite [Screenit app for Reschedule flow] -->

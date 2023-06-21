@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SignUp for Screenit App">
+
+
+ <test  name="Screenit Signup Valid email and valid mobilenumber">
+  
+
+ 
+ <parameter name= "Emailid"  value = "san910@screenit.io" />
+ 
+ <parameter name = "mobilenumber"  value = "06089015131"/>
+ 
+ <parameter name="screenshotName" value="SignuppagewithValidEmailAndMobileNumber"/>
+ 
+
+ 
+    <classes>
+    
+      <class name="com.Screenit.version3.Test.SignupTestForPostiveAndNegativeFlow"/>
+      
+    </classes>
+       
+  </test> <!-- Test -->
+  
+  <test  name="Screenit Signup Valid email and Invalid mobilenumber">
+  
+ 
+ 
+ <parameter name= "Emailid"  value = "san12@screenit.io" />
+ 
+ <parameter name = "mobilenumber"  value = "9373 87 330"/>
+ 
+  <parameter name="screenshotName" value="SignuppagewithValidEmailAndInvalidMobilenumber"/>
+ 
+    <classes>
+    
+      <class name="com.Screenit.version3.Test.SignupTestForPostiveAndNegativeFlow"/>
+      
+    </classes> 
+      
+  </test> <!-- Test -->
+  
+   <test  name="Screenit Signup InValid email and  Mobilenumber">
+  
+
+ 
+ <parameter name= "Emailid"  value = "san12screenit.io" />
+ 
+ <parameter name = "mobilenumber"  value = "083783737323"/>
+ 
+  <parameter name="screenshotName" value="SignuppagewithInValidEmailAndMobilenumber"/>
+ 
+    <classes>
+    
+      <class name="com.Screenit.version3.Test.SignupTestForPostiveAndNegativeFlow"/>
+      
+    </classes> 
+      
+  </test> <!-- Test -->
+  
+   <test  name="Screenit Signup Already Existing User">
+  
+
+ <parameter name= "Emailid"  value = "san111@screenit.io" />
+ 
+ <parameter name = "mobilenumber"  value = "09849393746"/>
+ 
+  <parameter name="screenshotName" value="SignuppagewithAlreadyExistingUser"/>
+ 
+    <classes>
+    
+      <class name="com.Screenit.version3.Test.SignupTestForPostiveAndNegativeFlow"/>
+      
+    </classes> 
+      
+  </test> <!-- Test -->
+  
+</suite> <!-- Screenit App -->

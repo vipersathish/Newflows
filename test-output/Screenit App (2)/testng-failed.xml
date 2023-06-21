@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Screenit App (2)]">
+  <test thread-count="5" name="Homepage Test Cases for postive and negative flow(failed)">
+    <parameter name="Emailid" value="san111@screenit.io"/>
+    <parameter name="keyskill" value="Core Java"/>
+    <parameter name="title" value="Automation Testing"/>
+    <parameter name="screenshotName_3" value="PagenationLists"/>
+    <parameter name="screenshotName_2" value="TotalcountPostProfiles"/>
+    <parameter name="screenshotName_5" value="SearchFieldForKeySkillLists"/>
+    <parameter name="screenshotName_4" value="SearchFieldForTitleLists"/>
+    <parameter name="screenshotName" value="loginpagewithpostivedata"/>
+    <parameter name="screenshotName_1" value="Homepagefunctionsdisplayed"/>
+    <parameter name="ID" value="SCR0017A"/>
+    <parameter name="screenshotName_10" value="UploadResumeselectedcount"/>
+    <parameter name="screenshotName_7" value="UploadResumeProfilecount"/>
+    <parameter name="screenshotName_6" value="SearchFieldForIDLists"/>
+    <parameter name="screenshotName_9" value="UploadResumeSitcount"/>
+    <parameter name="Password" value="Welcome@1"/>
+    <parameter name="screenshotName_8" value="UploadResumeschedulecount"/>
+    <classes>
+      <class name="com.Screenit.version3.Test.HomePageTestForPostiveAndNegativeFlow">
+        <methods>
+          <include name="setup"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.Test.HomePageTestForPostiveAndNegativeFlow -->
+    </classes>
+  </test> <!-- Homepage Test Cases for postive and negative flow(failed) -->
+</suite> <!-- Failed suite [Screenit App (2)] -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.Screenit.version3.pages.LoginPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.pages.LoginPage -->
+      <class name="com.Screenit.version3.pages.ForgotPasswordPostiveAndNegativeFlow">
+        <methods>
+          <include name="forgetPassword"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.pages.ForgotPasswordPostiveAndNegativeFlow -->
+      <class name="com.Screenit.version3.pages.HomepagePostiveAndNegativeScenerio">
+        <methods>
+          <include name="Homepagefunctionality"/>
+          <include name="setUp"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.pages.HomepagePostiveAndNegativeScenerio -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

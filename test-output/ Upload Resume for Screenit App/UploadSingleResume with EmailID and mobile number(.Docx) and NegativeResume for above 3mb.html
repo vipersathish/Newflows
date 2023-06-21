@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>TestNG:  UploadSingleResume with EmailID and mobile number(.Docx) and NegativeResume for above 3mb</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UploadSingleResume with EmailID and mobile number(.Docx) and NegativeResume for above 3mb</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 21 12:00:12 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>115 seconds (115089 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow.UploadSingleResumeWithNegative()'><b>UploadSingleResumeWithNegative</b><br>Test class: com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow<br>Parameters: C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Python - Fresher (Puvi).docx, ResumeUploadedWithNegativeFileScreenshots<br/>
+<a href="#Output-886341817" onClick='toggleBox("Output-886341817", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-886341817" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-886341817">
+<a href='C:\Users\TTS-USER\AppData\Local\TempResumeUploadedWithNegativeFileScreenshots---2023-06-21 12-02-02.png'> <img src='C:\Users\TTS-USER\AppData\Local\TempResumeUploadedWithNegativeFileScreenshots---2023-06-21 12-02-02.png' height='100' width='100'/> </a><br/>
+upload file should be <3mb <br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow@610694f1</td></tr>
+<tr>
+<td title='com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow.UploadSingleResumeWithPostive()'><b>UploadSingleResumeWithPostive</b><br>Test class: com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow<br>Parameters: id, C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenITFlow.DDD\\sample\\samplejd\\Sathish.docx, ResumeUploadedWithPostiveFileScreenshots<br/>
+<a href="#Output-1528756911" onClick='toggleBox("Output-1528756911", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1528756911" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1528756911">
+<a href='C:\Users\TTS-USER\AppData\Local\TempResumeUploadedWithPostiveFileScreenshots---2023-06-21 12-01-14.png'> <img src='C:\Users\TTS-USER\AppData\Local\TempResumeUploadedWithPostiveFileScreenshots---2023-06-21 12-01-14.png' height='100' width='100'/> </a><br/>
+Verify positive message is not working org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=108.0.5359.95)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TTS-SCRIT-5', ip: '10.10.12.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\TTS-USER\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dab46a06a018ef4e307b60346f67e268<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow@610694f1</td></tr>
+<tr>
+<td title='com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow.login()'><b>login</b><br>Test class: com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow<br>Parameters: san111@screenit.io, Welcome@1, loginScreenshot<br/>
+<a href="#Output-1126888535" onClick='toggleBox("Output-1126888535", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1126888535" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1126888535">
+Enter the Maild---------san111@screenit.io<br/>
+Enter the Password-----Welcome@1<br/>
+click the submit button<br/>
+<a href='C:\Users\TTS-USER\AppData\Local\TemploginScreenshot---2023-06-21 12-00-58.png'> <img src='C:\Users\TTS-USER\AppData\Local\TemploginScreenshot---2023-06-21 12-00-58.png' height='100' width='100'/> </a><br/>
+succesfully login and navigate to the dashboard pagehttps://demo.screenit.io/#/dashboard_v3<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow@610694f1</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Screenit app for LoginPage">
+
+	<test name="Screenit Valid email and valid password">
+
+
+		<parameter name="Emailid" value="san111@screenit.io" />
+
+		<parameter name="Password" value="Welcome@1" />
+		
+		<parameter name="screenshotName"   value="LoginPagePostivescreenshotWithValidEmailidAndPassword"/>
+
+
+
+		<classes>
+
+			<class
+				name="com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow" />
+
+		</classes>
+
+	</test> <!-- Test -->
+
+	<test name="Screenit Valid email and Invalid password">
+
+
+
+		<parameter name="Emailid" value="san111@screenit.io" />
+
+		<parameter name="Password" value="Viper@Sathish15_" />
+		
+			<parameter name="screenshotName"   value="LoginPageNegativescreenshotwithInvalidPassword"/>
+
+		<classes>
+
+			<class
+				name="com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow" />
+
+		</classes>
+
+	</test> <!-- Test -->
+
+	<test name="Screenit InValid email and valid password">
+
+
+		<parameter name="Emailid" value="an1@screenit.io" />
+
+		<parameter name="Password" value="Welcome@1" />
+		
+			<parameter name="screenshotName"   value="LoginPageNegativescreenshotwithInValidEmail"/>
+
+		<classes>
+
+			<class
+				name="com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow" />
+
+		</classes>
+
+	</test> <!-- Test -->
+
+
+	<test name="Screenit InValid email and Invalid password">
+
+
+
+		<parameter name="Emailid" value="sa1@screenit.io" />
+
+		<parameter name="Password" value="Welcome@" />
+		
+		<parameter name="screenshotName"   value="LoginPageNegativescreenshotwithInavlidPasswordAndEmailid"/>
+
+		<classes>
+
+			<class
+				name="com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow" />
+
+		</classes>
+
+	</test> <!-- Test -->
+
+
+
+
+</suite> <!-- Suite -->
