@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -20,25 +21,25 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Screenit_app_for_LoginPage">
-              <span class="suite-name border-passed">Screenit app for LoginPage</span>
+            <a href="#" panel-name="suite-Screen_app_for_filter_search_by_status" class="navigator-link">
+              <span class="suite-name border-failed">Screen app for filter search by status</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Screenit_app_for_LoginPage">
-                    <span>C:\Users\TTS-USER\workspace\com.TestngFramework.ScreenitV3\LoginPageForPostiveAndNegativeFile.xml</span>
+                  <a href="#" panel-name="test-xml-Screen_app_for_filter_search_by_status" class="navigator-link ">
+                    <span>C:\Users\TTS-USER\workspace\com.TestngFramework.ScreenitV3\VerifyFilterStatusForId.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Screenit_app_for_LoginPage">
+                  <a href="#" panel-name="testlist-Screen_app_for_filter_search_by_status" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Screenit_app_for_LoginPage">
+                  <a href="#" panel-name="group-Screen_app_for_filter_search_by_status" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Screenit_app_for_LoginPage">
+                  <a href="#" panel-name="times-Screen_app_for_filter_search_by_status" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Screenit_app_for_LoginPage">
+                  <a href="#" panel-name="reporter-Screen_app_for_filter_search_by_status" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Screenit_app_for_LoginPage">
+                  <a href="#" panel-name="ignored-methods-Screen_app_for_filter_search_by_status" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Screenit_app_for_LoginPage">
+                  <a href="#" panel-name="chronological-Screen_app_for_filter_search_by_status" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Screen_app_for_filter_search_by_status" class="hide-methods failed suite-Screen_app_for_filter_search_by_status"> (hide)</a> <!-- hide-methods failed suite-Screen_app_for_filter_search_by_status -->
+                      <a href="#" panel-name="suite-Screen_app_for_filter_search_by_status" class="show-methods failed suite-Screen_app_for_filter_search_by_status"> (show)</a> <!-- show-methods failed suite-Screen_app_for_filter_search_by_status -->
+                    </span>
+                    <div class="method-list-content failed suite-Screen_app_for_filter_search_by_status">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Screen_app_for_filter_search_by_status" title="com.Screenit.version3.Test.FilterAndScoreTestForIdFlow" class="method navigator-link" hash-for-method="checkFilterByStatusForUploadedResume(id, Schedule Request Pending, Scheduled, New, firstsearchstatus, Secondsearchstatus, Thirdsearchstat...)">checkFilterByStatusForUploadedResume(id, Schedule Request Pending, Scheduled, New, firstsearchstatus, Secondsearchstatus, Thirdsearchstat...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Screen_app_for_filter_search_by_status -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Screenit_app_for_LoginPage" class="hide-methods passed suite-Screenit_app_for_LoginPage"> (hide)</a> <!-- hide-methods passed suite-Screenit_app_for_LoginPage -->
-                      <a href="#" panel-name="suite-Screenit_app_for_LoginPage" class="show-methods passed suite-Screenit_app_for_LoginPage"> (show)</a> <!-- show-methods passed suite-Screenit_app_for_LoginPage -->
+                      <a href="#" panel-name="suite-Screen_app_for_filter_search_by_status" class="hide-methods passed suite-Screen_app_for_filter_search_by_status"> (hide)</a> <!-- hide-methods passed suite-Screen_app_for_filter_search_by_status -->
+                      <a href="#" panel-name="suite-Screen_app_for_filter_search_by_status" class="show-methods passed suite-Screen_app_for_filter_search_by_status"> (show)</a> <!-- show-methods passed suite-Screen_app_for_filter_search_by_status -->
                     </span>
-                    <div class="method-list-content passed suite-Screenit_app_for_LoginPage">
+                    <div class="method-list-content passed suite-Screen_app_for_filter_search_by_status">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Screenit_app_for_LoginPage" title="com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow" hash-for-method="loginFunctionality(san12@screenit.io, Welcome@1, LoginPagePostivescreenshotWithValidEmailidAndPassword)">loginFunctionality(san12@screenit.io, Welcome@1, LoginPagePostivescreenshotWithValidEmailidAndPassword)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Screen_app_for_filter_search_by_status" title="com.Screenit.version3.Test.FilterAndScoreTestForIdFlow" class="method navigator-link" hash-for-method="loginFunctionality(san111@screenit.io, Welcome@1)">loginFunctionality(san111@screenit.io, Welcome@1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Screenit_app_for_LoginPage -->
+                    </div> <!-- method-list-content passed suite-Screen_app_for_filter_search_by_status -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,149 +131,213 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Screenit_app_for_LoginPage" class="panel Screenit_app_for_LoginPage">
-          <div class="suite-Screenit_app_for_LoginPage-class-passed">
+        <div panel-name="suite-Screen_app_for_filter_search_by_status" class="panel Screen_app_for_filter_search_by_status">
+          <div class="suite-Screen_app_for_filter_search_by_status-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.Screenit.version3.Test.FilterAndScoreTestForIdFlow</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginFunctionality(san12@screenit.io, Welcome@1, LoginPagePostivescreenshotWithValidEmailidAndPassword)">
-                  </a> <!-- loginFunctionality(san12@screenit.io, Welcome@1, LoginPagePostivescreenshotWithValidEmailidAndPassword) -->
-                  <span class="method-name">loginFunctionality</span>
-                  <span class="parameters">(san12@screenit.io, Welcome@1, LoginPagePostivescreenshotWithValidEmailidAndPassword)</span>
+                  <a name="checkFilterByStatusForUploadedResume(id, Schedule Request Pending, Scheduled, New, firstsearchstatus, Secondsearchstatus, Thirdsearchstat...)">
+                  </a> <!-- checkFilterByStatusForUploadedResume(id, Schedule Request Pending, Scheduled, New, firstsearchstatus, Secondsearchstatus, Thirdsearchstat...) -->
+                  <span class="method-name">checkFilterByStatusForUploadedResume</span>
+                  <span class="parameters">(id,Schedule Request Pending,Scheduled,New,firstsearchstatus,Secondsearchstatus,Thirdsearchstatus,9,verify sit score status)</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.95)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TTS-SCRIT-5&apos;, ip: &apos;10.10.12.58&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\TTS-USER\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57121}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d146276e8187b4c16bcd68756bd6d723
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at com.Screenit.version3.Pages.CandidateProfilePage.verifyFilterBySitScore(CandidateProfilePage.java:1031)
+	at com.Screenit.version3.Test.FilterAndScoreTestForIdFlow.checkFilterByStatusForUploadedResume(FilterAndScoreTestForIdFlow.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Screenit_app_for_LoginPage-class-passed -->
-        </div> <!-- panel Screenit_app_for_LoginPage -->
-        <div panel-name="test-xml-Screenit_app_for_LoginPage" class="panel">
+          </div> <!-- suite-Screen_app_for_filter_search_by_status-class-failed -->
+          <div class="suite-Screen_app_for_filter_search_by_status-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Screenit.version3.Test.FilterAndScoreTestForIdFlow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginFunctionality(san111@screenit.io, Welcome@1)">
+                  </a> <!-- loginFunctionality(san111@screenit.io, Welcome@1) -->
+                  <span class="method-name">loginFunctionality</span>
+                  <span class="parameters">(san111@screenit.io,Welcome@1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Screen_app_for_filter_search_by_status-class-passed -->
+        </div> <!-- panel Screen_app_for_filter_search_by_status -->
+        <div panel-name="test-xml-Screen_app_for_filter_search_by_status" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\TTS-USER\workspace\com.TestngFramework.ScreenitV3\LoginPageForPostiveAndNegativeFile.xml</span>
+            <span class="header-content">C:\Users\TTS-USER\workspace\com.TestngFramework.ScreenitV3\VerifyFilterStatusForId.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Screenit app for LoginPage&quot;&gt;
-  &lt;test name=&quot;Screenit Valid email and valid password&quot;&gt;
-    &lt;parameter name=&quot;Emailid&quot; value=&quot;san12@screenit.io&quot;/&gt;
-    &lt;parameter name=&quot;screenshotName&quot; value=&quot;LoginPagePostivescreenshotWithValidEmailidAndPassword&quot;/&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Screen app for filter search by status&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;search by status&quot;&gt;
+    &lt;parameter name=&quot;screenshotName_3&quot; value=&quot;verify sit score status&quot;/&gt;
+    &lt;parameter name=&quot;Emailid&quot; value=&quot;san111@screenit.io&quot;/&gt;
+    &lt;parameter name=&quot;screenshotName_2&quot; value=&quot;Thirdsearchstatus&quot;/&gt;
+    &lt;parameter name=&quot;screenshotName&quot; value=&quot;firstsearchstatus&quot;/&gt;
+    &lt;parameter name=&quot;text1&quot; value=&quot;Scheduled&quot;/&gt;
+    &lt;parameter name=&quot;screenshotName_1&quot; value=&quot;Secondsearchstatus&quot;/&gt;
+    &lt;parameter name=&quot;text2&quot; value=&quot;New&quot;/&gt;
+    &lt;parameter name=&quot;text&quot; value=&quot;Schedule Request Pending&quot;/&gt;
+    &lt;parameter name=&quot;flow&quot; value=&quot;id&quot;/&gt;
     &lt;parameter name=&quot;Password&quot; value=&quot;Welcome@1&quot;/&gt;
+    &lt;parameter name=&quot;sit&quot; value=&quot;9&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow&quot;/&gt;
+      &lt;class name=&quot;com.Screenit.version3.Test.FilterAndScoreTestForIdFlow&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Screenit Valid email and valid password --&gt;
-&lt;/suite&gt; &lt;!-- Screenit app for LoginPage --&gt;
+  &lt;/test&gt; &lt;!-- search by status --&gt;
+&lt;/suite&gt; &lt;!-- Screen app for filter search by status --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Screenit_app_for_LoginPage" class="panel">
+        <div panel-name="testlist-Screen_app_for_filter_search_by_status" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Screenit app for LoginPage</span>
+            <span class="header-content">Tests for Screen app for filter search by status</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Screenit Valid email and valid password (1 class)</span>
+                <span class="test-name">search by status (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Screenit_app_for_LoginPage" class="panel">
+        <div panel-name="group-Screen_app_for_filter_search_by_status" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Screenit app for LoginPage</span>
+            <span class="header-content">Groups for Screen app for filter search by status</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Screenit_app_for_LoginPage" class="panel">
+        <div panel-name="times-Screen_app_for_filter_search_by_status" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Screenit app for LoginPage</span>
+            <span class="header-content">Times for Screen app for filter search by status</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Screenit_app_for_LoginPage');
-function tableData_Screenit_app_for_LoginPage() {
+suiteTableInitFunctions.push('tableData_Screen_app_for_filter_search_by_status');
+function tableData_Screen_app_for_filter_search_by_status() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginFunctionality')
-data.setCell(0, 2, 'com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow')
-data.setCell(0, 3, 78664);
-window.suiteTableData['Screenit_app_for_LoginPage']= { tableData: data, tableDiv: 'times-div-Screenit_app_for_LoginPage'}
+data.setCell(0, 1, 'checkFilterByStatusForUploadedResume')
+data.setCell(0, 2, 'com.Screenit.version3.Test.FilterAndScoreTestForIdFlow')
+data.setCell(0, 3, 158691);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginFunctionality')
+data.setCell(1, 2, 'com.Screenit.version3.Test.FilterAndScoreTestForIdFlow')
+data.setCell(1, 3, 17348);
+window.suiteTableData['Screen_app_for_filter_search_by_status']= { tableData: data, tableDiv: 'times-div-Screen_app_for_filter_search_by_status'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Screenit_app_for_LoginPage">
-              </div> <!-- times-div-Screenit_app_for_LoginPage -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Screen_app_for_filter_search_by_status">
+              </div> <!-- times-div-Screen_app_for_filter_search_by_status -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Screenit_app_for_LoginPage" class="panel">
+        <div panel-name="reporter-Screen_app_for_filter_search_by_status" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Screenit app for LoginPage</span>
+            <span class="header-content">Reporter output for Screen app for filter search by status</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">loginFunctionality(san12@screenit.io, Welcome@1, LoginPagePostivescreenshotWithValidEmailidAndPassword)</span>
+              <span class="reporter-method-name">loginFunctionality(san111@screenit.io, Welcome@1)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Enter the Maild---------san12@screenit.io</span>
+                <span class="reporter-method-output">Enter the Maild---------san111@screenit.io</span>
                 <span class="reporter-method-output">Enter the Password-----Welcome@1</span>
                 <span class="reporter-method-output">click the submit button</span>
-                <span class="reporter-method-output"><a href='C:\Users\TTS-USER\AppData\Local\TempLoginPagePostivescreenshotWithValidEmailidAndPassword---2023-07-11 13-01-48.png'> <img src='C:\Users\TTS-USER\AppData\Local\TempLoginPagePostivescreenshotWithValidEmailidAndPassword---2023-07-11 13-01-48.png' height='100' width='100'/> </a></span>
-                <span class="reporter-method-output">Successfully login with valid creditals and Navigate to the dash board page--------https://test.screenit.io/#/dashboard_v3</span>
+                <span class="reporter-method-output">succesfully login and navigate to the dashboard pagehttps://demo.screenit.io/#/dashboard_v3</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">checkFilterByStatusForUploadedResume(id, Schedule Request Pending, Scheduled, New, firstsearchstatus, Secondsearchstatus, Thirdsearchstat...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">search by status count--------0</span>
+                <span class="reporter-method-output">status matched the count</span>
+                <span class="reporter-method-output"><a href='C:\Users\TTS-USER\AppData\Local\Tempfirstsearchstatus---2023-08-01 16-11-03.png'> <img src='C:\Users\TTS-USER\AppData\Local\Tempfirstsearchstatus---2023-08-01 16-11-03.png' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output">search by status count--------0</span>
+                <span class="reporter-method-output">status matched the count</span>
+                <span class="reporter-method-output"><a href='C:\Users\TTS-USER\AppData\Local\TempSecondsearchstatus---2023-08-01 16-12-14.png'> <img src='C:\Users\TTS-USER\AppData\Local\TempSecondsearchstatus---2023-08-01 16-12-14.png' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output">search by status count--------4</span>
+                <span class="reporter-method-output">search is working fine</span>
+                <span class="reporter-method-output">search is working fine</span>
+                <span class="reporter-method-output">search is working fine</span>
+                <span class="reporter-method-output">search is working fine</span>
+                <span class="reporter-method-output"><a href='C:\Users\TTS-USER\AppData\Local\TempThirdsearchstatus---2023-08-01 16-12-26.png'> <img src='C:\Users\TTS-USER\AppData\Local\TempThirdsearchstatus---2023-08-01 16-12-26.png' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output">search by status count--------2</span>
+                <span class="reporter-method-output">status matched the count</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Screenit_app_for_LoginPage" class="panel">
+        <div panel-name="ignored-methods-Screen_app_for_filter_search_by_status" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Screenit_app_for_LoginPage" class="panel">
+        <div panel-name="chronological-Screen_app_for_filter_search_by_status" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startTest</span>
+              <div class="chronological-class-name">com.Screenit.version3.Test.FilterAndScoreTestForIdFlow</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">237 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">loginFunctionality(san12@screenit.io, Welcome@1, LoginPagePostivescreenshotWithValidEmailidAndPassword)</span>
-                <span class="method-start">3757 ms</span>
+                <span class="method-name">loginFunctionality(san111@screenit.io, Welcome@1)</span>
+                <span class="method-start">3891 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">capture</span>
-                <span class="method-start">82423 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">endTest</span>
-                <span class="method-start">82646 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-name">checkFilterByStatusForUploadedResume(id, Schedule Request Pending, Scheduled, New, firstsearchstatus, Secondsearchstatus, Thirdsearchstat...)</span>
+                <span class="method-start">21258 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">179967 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

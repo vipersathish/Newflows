@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [ Upload Resume for Screenit App]">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ Upload Resume for Screenit App]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="UploadSingleResume with EmailID and mobile number(.Docx) and NegativeResume for above 3mb(failed)">
-    <parameter name="Emailid" value="san12@screenit.io"/>
+    <parameter name="Emailid" value="san111@screenit.io"/>
     <parameter name="screenshotName_2" value="ResumeUploadedWithNegativeFileScreenshots"/>
     <parameter name="file" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenITFlow.DDD\\sample\\samplejd\\Sathish.docx"/>
     <parameter name="screenshotName" value="loginScreenshot"/>
@@ -13,15 +13,15 @@
     <classes>
       <class name="com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow">
         <methods>
-          <include name="login" invocation-numbers="0"/>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="UploadSingleResumeWithNegative" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow -->
     </classes>
   </test> <!-- UploadSingleResume with EmailID and mobile number(.Docx) and NegativeResume for above 3mb(failed) -->
   <test thread-count="5" name="UploadSingleResume without EmailID and mobile number(.Docx) and NegativeResume for .png (failed)">
-    <parameter name="Emailid" value="san12@screenit.io"/>
+    <parameter name="Emailid" value="san111@screenit.io"/>
     <parameter name="screenshotName_2" value="ResumeUploadedWithNegativeFileScreenshots"/>
     <parameter name="file" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Automation Testing.docx"/>
     <parameter name="screenshotName" value="loginScreenshot"/>
@@ -32,15 +32,15 @@
     <classes>
       <class name="com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow">
         <methods>
-          <include name="login" invocation-numbers="0"/>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="UploadSingleResumeWithNegative" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow -->
     </classes>
   </test> <!-- UploadSingleResume without EmailID and mobile number(.Docx) and NegativeResume for .png (failed) -->
   <test thread-count="5" name="UploadSingleResume with EmailID and mobile number(.pdf) and NegativeResume for zipfile(failed)">
-    <parameter name="Emailid" value="san12@screenit.io"/>
+    <parameter name="Emailid" value="san111@screenit.io"/>
     <parameter name="screenshotName_2" value="ResumeUploadedWithNegativeFileScreenshots"/>
     <parameter name="file" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Mrinalini V.pdf"/>
     <parameter name="screenshotName" value="loginScreenshot"/>
@@ -51,15 +51,15 @@
     <classes>
       <class name="com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow">
         <methods>
-          <include name="login" invocation-numbers="0"/>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="UploadSingleResumeWithNegative" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow -->
     </classes>
   </test> <!-- UploadSingleResume with EmailID and mobile number(.pdf) and NegativeResume for zipfile(failed) -->
   <test thread-count="5" name="UploadSingleResume without EmailID and mobile number(.pdf) and NegativeResume for excel file(failed)">
-    <parameter name="Emailid" value="san12@screenit.io"/>
+    <parameter name="Emailid" value="san111@screenit.io"/>
     <parameter name="screenshotName_2" value="ResumeUploadedWithNegativeFileScreenshots"/>
     <parameter name="file" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Automation Testing.pdf"/>
     <parameter name="screenshotName" value="loginScreenshot"/>
@@ -70,15 +70,15 @@
     <classes>
       <class name="com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow">
         <methods>
-          <include name="login" invocation-numbers="0"/>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="UploadSingleResumeWithNegative" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow -->
     </classes>
   </test> <!-- UploadSingleResume without EmailID and mobile number(.pdf) and NegativeResume for excel file(failed) -->
   <test thread-count="5" name="Upload candidate resume with 2.5 mb and NegativeResume for textfile (failed)">
-    <parameter name="Emailid" value="san12@screenit.io"/>
+    <parameter name="Emailid" value="san111@screenit.io"/>
     <parameter name="screenshotName_2" value="ResumeUploadedWithNegativeFileScreenshots"/>
     <parameter name="file" value="C:\\Users\\TTS-USER\\workspace\\com.TrueTech.ScreenIT.NewFlow\\sample\\samplejd\\Python - Fresher (Puvi)-compressed.pdf"/>
     <parameter name="screenshotName" value="loginScreenshot"/>
@@ -89,9 +89,9 @@
     <classes>
       <class name="com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow">
         <methods>
-          <include name="login" invocation-numbers="0"/>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="UploadSingleResumeWithNegative" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.Screenit.version3.Test.UploadIdResumeTestForPostiveAndNegativeflow -->
     </classes>

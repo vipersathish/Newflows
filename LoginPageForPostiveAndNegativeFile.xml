@@ -6,7 +6,26 @@
 	<test name="Screenit Valid email and valid password" >
 
 
-		<parameter name="Emailid" value="san12@screenit.io" />
+		<parameter name="Emailid" value="san111@screenit.io" />
+
+		<parameter name="Password" value="Welcome@1" />
+		
+		<parameter name="screenshotName"   value="LoginPagePostivescreenshotWithValidEmailidAndPassword"/>
+
+		<classes>
+
+			<class
+				name="com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow" />
+
+		</classes>
+		
+		</test> <!-- Test -->
+		
+		
+		<test name="Screenit InValid email and valid password" >
+
+
+		<parameter name="Emailid" value="san112@screenit.io" />
 
 		<parameter name="Password" value="Welcome@1" />
 		

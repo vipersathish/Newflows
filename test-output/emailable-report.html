@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -7,31 +7,32 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Screenit app for LoginPage</th></tr>
-<tr><td><a href="#t0">Screenit Valid email and valid password</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">85,021</td><td></td><td></td></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Screen app for filter search by status</th></tr>
+<tr><td><a href="#t0">search by status</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">180,601</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Screenit app for LoginPage</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Screenit Valid email and valid password &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow</td><td><a href="#m0">endTest</a></td><td rowspan="1">1689060713440</td><td rowspan="1">2347</td></tr><tr><th colspan="4">Screenit Valid email and valid password &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow</td><td><a href="#m1">loginFunctionality</a></td><td rowspan="1">1689060634551</td><td rowspan="1">78664</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Screen app for filter search by status</th></tr></tbody><tbody id="t0"><tr><th colspan="4">search by status &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.Screenit.version3.Test.FilterAndScoreTestForIdFlow</td><td><a href="#m0">checkFilterByStatusForUploadedResume</a></td><td rowspan="1">1690886387916</td><td rowspan="1">158691</td></tr><tr><th colspan="4">search by status &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.Screenit.version3.Test.FilterAndScoreTestForIdFlow</td><td><a href="#m1">loginFunctionality</a></td><td rowspan="1">1690886370549</td><td rowspan="1">17348</td></tr></tbody>
 </table>
-<h2>Screenit Valid email and valid password</h2><h3 id="m0">com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow#endTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
-	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469)
-	at org.apache.commons.mail.Email.send(Email.java:1496)
-	at com.Screenit.version3.Initializer.Initializer.email(Initializer.java:145)
-	at com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow.endTest(LoginTestForPostiveAndNegativeFlow.java:141)
-Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
-535 5.7.8  https://support.google.com/mail/?p=BadCredentials y11-20020a637d0b000000b0055b149a6db5sm907202pgc.43 - gsmtp
-
-	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:932)
-	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:843)
-	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:748)
-	at javax.mail.Service.connect(Service.java:388)
-	at javax.mail.Service.connect(Service.java:246)
-	at javax.mail.Service.connect(Service.java:195)
-	at javax.mail.Transport.send0(Transport.java:254)
-	at javax.mail.Transport.send(Transport.java:124)
-	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459)
-	... 29 more
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow#loginFunctionality</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>san12@screenit.io</td><td>Welcome@1</td><td>LoginPagePostivescreenshotWithValidEmailidAndPassword</td></tr><tr><th colspan="3">Messages</th></tr><tr><td colspan="3"><div class="messages">Enter the Maild---------san12@screenit.io<br/>Enter the Password-----Welcome@1<br/>click the submit button<br/><a href='C:\Users\TTS-USER\AppData\Local\TempLoginPagePostivescreenshotWithValidEmailidAndPassword---2023-07-11 13-01-48.png'> <img src='C:\Users\TTS-USER\AppData\Local\TempLoginPagePostivescreenshotWithValidEmailidAndPassword---2023-07-11 13-01-48.png' height='100' width='100'/> </a><br/>Successfully login with valid creditals and Navigate to the dash board page--------https://test.screenit.io/#/dashboard_v3</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>search by status</h2><h3 id="m0">com.Screenit.version3.Test.FilterAndScoreTestForIdFlow#checkFilterByStatusForUploadedResume</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr><tr class="param stripe"><td>id</td><td>Schedule Request Pending</td><td>Scheduled</td><td>New</td><td>firstsearchstatus</td><td>Secondsearchstatus</td><td>Thirdsearchstatus</td><td>9</td><td>verify sit score status</td></tr><tr><th colspan="9">Messages</th></tr><tr><td colspan="9"><div class="messages">search by status count--------0<br/>status matched the count<br/><a href='C:\Users\TTS-USER\AppData\Local\Tempfirstsearchstatus---2023-08-01 16-11-03.png'> <img src='C:\Users\TTS-USER\AppData\Local\Tempfirstsearchstatus---2023-08-01 16-11-03.png' height='100' width='100'/> </a><br/>search by status count--------0<br/>status matched the count<br/><a href='C:\Users\TTS-USER\AppData\Local\TempSecondsearchstatus---2023-08-01 16-12-14.png'> <img src='C:\Users\TTS-USER\AppData\Local\TempSecondsearchstatus---2023-08-01 16-12-14.png' height='100' width='100'/> </a><br/>search by status count--------4<br/>search is working fine<br/>search is working fine<br/>search is working fine<br/>search is working fine<br/><a href='C:\Users\TTS-USER\AppData\Local\TempThirdsearchstatus---2023-08-01 16-12-26.png'> <img src='C:\Users\TTS-USER\AppData\Local\TempThirdsearchstatus---2023-08-01 16-12-26.png' height='100' width='100'/> </a><br/>search by status count--------2<br/>status matched the count</div></td></tr><tr><th colspan="9">Exception</th></tr><tr><td colspan="9"><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.95)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TTS-SCRIT-5&apos;, ip: &apos;10.10.12.58&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\TTS-USER\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57121}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d146276e8187b4c16bcd68756bd6d723
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at com.Screenit.version3.Pages.CandidateProfilePage.verifyFilterBySitScore(CandidateProfilePage.java:1031)
+	at com.Screenit.version3.Test.FilterAndScoreTestForIdFlow.checkFilterByStatusForUploadedResume(FilterAndScoreTestForIdFlow.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.Screenit.version3.Test.FilterAndScoreTestForIdFlow#loginFunctionality</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>san111@screenit.io</td><td>Welcome@1</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">Enter the Maild---------san111@screenit.io<br/>Enter the Password-----Welcome@1<br/>click the submit button<br/>succesfully login and navigate to the dashboard pagehttps://demo.screenit.io/#/dashboard_v3</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

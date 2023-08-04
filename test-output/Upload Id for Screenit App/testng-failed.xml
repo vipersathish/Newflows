@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Upload Id for Screenit App]">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Upload Id for Screenit App]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Java developer post with check positive and negative scenerio(failed)">
     <parameter name="secondaryskill_2" value="Agile Methodologies"/>
     <parameter name="date" value="31"/>
-    <parameter name="Emailid" value="san12@screenit.io"/>
+    <parameter name="Emailid" value="san111@screenit.io"/>
     <parameter name="jobdescription" value="testing"/>
     <parameter name="jobdescription_1" value="testing"/>
     <parameter name="jobdescription_2" value="testing"/>
@@ -35,8 +35,8 @@
       <class name="com.Screenit.version3.Test.UploadIDTestForPostiveAndNegativeFlow">
         <methods>
           <include name="tearDown"/>
-          <include name="CreateInterviewerDescriptionIDWithClickResetButtonAndFilledAllTheField" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="CreateInterviewerDescriptionIDWithClickResetButtonAndFilledAllTheField" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.Screenit.version3.Test.UploadIDTestForPostiveAndNegativeFlow -->
     </classes>

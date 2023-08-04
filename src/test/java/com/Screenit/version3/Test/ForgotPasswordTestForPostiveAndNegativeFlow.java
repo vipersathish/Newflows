@@ -65,7 +65,7 @@ public class ForgotPasswordTestForPostiveAndNegativeFlow extends Initializer {
 
 		Thread.sleep(2000);
 
-		if (url.equals("https://test.screenit.io/#/forget/password/success")) {
+		if (url.equals("https://demo.screenit.io/#/forget/password/success")) {
 
 			WebElement successmsg = driver.findElement(By.xpath("//p[@class='lead success-text-align']"));
 

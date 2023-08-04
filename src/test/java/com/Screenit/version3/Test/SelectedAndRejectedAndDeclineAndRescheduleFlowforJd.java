@@ -6,7 +6,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.Screenit.version3.Initializer.DriverFunctions;
 import com.Screenit.version3.Initializer.Initializer;
 import com.Screenit.version3.Initializer.Screenshot;
 import com.Screenit.version3.Pages.CandidateProfilePage;

@@ -13,6 +13,7 @@ import org.apache.commons.mail.MultiPartEmail;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriver.SystemProperty;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import org.testng.Reporter;
@@ -55,7 +56,7 @@ public class Initializer {
 	
 	
 	/**
-	 * @purpose driver initilize
+
 	 */
 	
 	public static WebDriver driver = null;
@@ -65,7 +66,7 @@ public class Initializer {
 	 * 
 	 * 
 	 * @throws IOException
-	 * @purpose initialize env, locator, webdriver variables
+	
 	 */
 	
 	
@@ -87,6 +88,7 @@ public class Initializer {
 		
 			WebDriverManager.chromedriver().setup();
 			
+		
 			driver= new ChromeDriver();
 			
 			Reporter.log("The chrome browser is open now");

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Screenit app for LoginPage]">
-  <test name="Screenit Valid email and valid password(failed)">
-    <parameter name="Emailid" value="san12@screenit.io"/>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Screenit app for LoginPage]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Screenit Valid email and valid password(failed)">
+    <parameter name="Emailid" value="san111@screenit.io"/>
     <parameter name="screenshotName" value="LoginPagePostivescreenshotWithValidEmailidAndPassword"/>
     <parameter name="Password" value="Welcome@1"/>
     <classes>
       <class name="com.Screenit.version3.Test.LoginTestForPostiveAndNegativeFlow">
         <methods>
-          <include name="screenShotForFailedTestCase"/>
+          <include name="capture"/>
           <include name="setUp"/>
           <include name="loginFunctionality" invocation-numbers="0"/>
         </methods>

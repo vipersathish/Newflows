@@ -65,7 +65,7 @@ public static void enterPassword(String Password) throws InterruptedException{
 		
 		String Url= DriverFunctions.driver.getCurrentUrl();
 		
-		Assert.assertEquals(Url,"https://test.screenit.io/#/dashboard_v3");
+		Assert.assertEquals(Url,"https://demo.screenit.io/#/dashboard_v3");
 		
 		Reporter.log("succesfully login and navigate to the dashboard page"+Url);
 		

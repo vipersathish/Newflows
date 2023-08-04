@@ -7,7 +7,7 @@
   
 
  
- <parameter name= "Emailid"  value = "sana123@screenit.io" />
+ <parameter name= "Emailid"  value = "sana128@screenit.io" />
  
  <parameter name = "mobilenumber"  value = "06089915131"/>
  
@@ -27,7 +27,7 @@
   
  
  
- <parameter name= "Emailid"  value = "san12@screenit.io" />
+ <parameter name= "Emailid"  value = "san111@screenit.io" />
  
  <parameter name = "mobilenumber"  value = "9373 87 330"/>
  
@@ -45,7 +45,7 @@
   
 
  
- <parameter name= "Emailid"  value = "san12screenit.io" />
+ <parameter name= "Emailid"  value = "san129screenit.io" />
  
  <parameter name = "mobilenumber"  value = "083783737323"/>
  
@@ -62,7 +62,7 @@
    <test  name="Screenit Signup Already Existing User">
   
 
- <parameter name= "Emailid"  value = "san12@screenit.io" />
+ <parameter name= "Emailid"  value = "san111@screenit.io" />
  
  <parameter name = "mobilenumber"  value = "09849393746"/>
  

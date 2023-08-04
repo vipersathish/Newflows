@@ -76,7 +76,7 @@ public class CandidateProfilePage {
 
 					Thread.sleep(3000);
 
-					DriverFunctions.getElementByXpath("(//span[text()='×'])[1]").click();
+					DriverFunctions.getElementByXpath("(//span[text()='ï¿½'])[1]").click();
 
 					Reporter.log("Candidate resume already uploaded ");
 
@@ -116,13 +116,9 @@ public class CandidateProfilePage {
 
 		Thread.sleep(2000);
 
-		WebElement cancelbtn = DriverFunctions.getElementByXpath("(//span[text()='×'])[1]");
-
-		if (cancelbtn.isDisplayed()) {
+		WebElement cancelbtn = DriverFunctions.getElementByXpath("(//span[text()='ï¿½'])[1]");
 
 			cancelbtn.click();
-
-		}
 
 	}
 
@@ -703,7 +699,7 @@ public class CandidateProfilePage {
 
 			Thread.sleep(2000);
 
-			WebElement cancelbtn1 = DriverFunctions.getElementByXpath("(//span[text()='×'])[5]");
+			WebElement cancelbtn1 = DriverFunctions.getElementByXpath("(//span[text()='ï¿½'])[5]");
 
 			cancelbtn1.click();
 
