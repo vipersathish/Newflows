@@ -2,6 +2,7 @@ package com.Screenit.version3.Pages;
 
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -12,6 +13,9 @@ import com.Screenit.version3.Initializer.DriverFunctions;
 public class LoginPage {
 	
 	public static void enterMail(String Emailid){
+		
+		
+		
 		
 		try{
 		
@@ -61,7 +65,7 @@ public static void enterPassword(String Password) throws InterruptedException{
 		
 		String Url= DriverFunctions.driver.getCurrentUrl();
 		
-		Assert.assertEquals(Url,"https://demo.screenit.io/#/dashboard_v3");
+		Assert.assertEquals(Url,"https://test.screenit.io/#/dashboard_v3");
 		
 		Reporter.log("succesfully login and navigate to the dashboard page"+Url);
 		

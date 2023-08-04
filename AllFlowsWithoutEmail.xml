@@ -19,8 +19,12 @@
 		<suite-file path="HomePagePostiveAndNegative.xml" />
 
 		<suite-file path="CandidateEditForPostiveAndNegativeFlow.xml" />
-
-
+		
+		<suite-file path="VerifyFilterStatusForId.xml" />
+		
+		<suite-file path="UploadJD.xml"  />
+		
 
 	</suite-files>
+	
 </suite> <!-- Suite -->

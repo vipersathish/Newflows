@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Screen App for jd flow]">
-  <test name="selected flow for jd 1 st round(failed)">
+  <test name="selected flow for jd 1 st round, decline with setavailabilty for 2 nd round and reschedule flow for 3 rd round(failed)">
     <parameter name="screenshotName_19" value="verify feeback result for second round"/>
     <parameter name="Emailid" value="san111@screenit.io"/>
     <parameter name="screenshotName_17" value="verify schedule status for second round"/>
     <parameter name="screenshotName_18" value="verify feed back pending statsus for second round"/>
     <parameter name="screenshotName_15" value="verify schedule req pending for second round with sec time"/>
+    <parameter name="screenshotName_37" value="verify selected or reject status for third round"/>
     <parameter name="screenshotName_16" value="verify selected interviewers for second round with sec time"/>
     <parameter name="screenshotName_13" value="verify schedule req pending for second round"/>
+    <parameter name="screenshotName_35" value="verify view history status for third round"/>
     <parameter name="screenshotName_14" value="verify selected interviewers for second round"/>
-    <parameter name="interviewername" value="priya"/>
+    <parameter name="screenshotName_36" value="verify sit score status for third round"/>
+    <parameter name="interviewername" value="teat"/>
+    <parameter name="Reason" value="Personal emergency"/>
     <parameter name="screenshotName_3" value="verify confirmation bending status for first round"/>
     <parameter name="screenshotName_2" value="verify shortlisted message for first round"/>
     <parameter name="screenshotName_5" value="verify schedule request pending status for first time"/>
@@ -18,26 +22,40 @@
     <parameter name="screenshotName_1" value="verify sit score above six for first round"/>
     <parameter name="screenshotName_0" value="loginwithvaiddata"/>
     <parameter name="screenshotName_11" value="verify feeback result for first round"/>
+    <parameter name="screenshotName_33" value="verify feedback pending status for third round"/>
     <parameter name="screenshotName_12" value="verify sit score status for first round"/>
+    <parameter name="screenshotName_34" value="verify view feed back result for third round"/>
+    <parameter name="screenshotName_31" value="verify selected interview list for third round for sec time"/>
     <parameter name="text" value="Technical"/>
     <parameter name="screenshotName_10" value="verify feed back pending statsus for first round"/>
+    <parameter name="screenshotName_32" value="verify  schedule status for third round"/>
     <parameter name="screenshotName_7" value="verify schedule request pending statsus for second time"/>
     <parameter name="screenshotName_6" value="verify selected list of interviewers 1"/>
+    <parameter name="screenshotName_30" value="verify verify reschedule status initiated for third round sec time"/>
     <parameter name="flow" value="jd"/>
     <parameter name="screenshotName_9" value="verify schedule status for first round"/>
     <parameter name="Password" value="Welcome@1"/>
     <parameter name="screenshotName_8" value="verify selected list of interviewers 2"/>
+    <parameter name="screenshotName_28" value="verify selected interview list for third round"/>
+    <parameter name="screenshotName_29" value="verify manual schedule for third round"/>
+    <parameter name="screenshotName_26" value="verify reschedule status initiated for third round"/>
+    <parameter name="screenshotName_27" value="verify re-schedule request pending for third round "/>
+    <parameter name="screenshotName_24" value="verify selected interview lists for third round"/>
+    <parameter name="screenshotName_25" value="verify cancelled status for third round"/>
     <parameter name="screenshotName_144" value="verifyschedule reinitiated status"/>
     <parameter name="name" value="sathish"/>
+    <parameter name="screenshotName_22" value="verify selected interview list for third round"/>
+    <parameter name="screenshotName_23" value="verify manual schedule for third round"/>
     <parameter name="screenshotName_20" value="verify sit score status for second round"/>
+    <parameter name="comment" value="Reschedule beacuse personal emergancy"/>
+    <parameter name="screenshotName_21" value="verify schedule request pending for third round"/>
     <classes>
       <class name="com.Screenit.version3.Test.SelectedAndRejectedAndDeclineAndRescheduleFlowforJd">
         <methods>
-          <include name="declinewithSetavailabilityFlow" invocation-numbers="0"/>
+          <include name="cancelWithRescheduleFlow" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="checkProfileMatchedCountAndSelectedFlowForJD" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.Screenit.version3.Test.SelectedAndRejectedAndDeclineAndRescheduleFlowforJd -->
     </classes>
-  </test> <!-- selected flow for jd 1 st round(failed) -->
+  </test> <!-- selected flow for jd 1 st round, decline with setavailabilty for 2 nd round and reschedule flow for 3 rd round(failed) -->
 </suite> <!-- Failed suite [Screen App for jd flow] -->

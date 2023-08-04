@@ -4,7 +4,7 @@
   <test thread-count="5" name="Java developer post with check positive and negative scenerio(failed)">
     <parameter name="secondaryskill_2" value="Agile Methodologies"/>
     <parameter name="date" value="31"/>
-    <parameter name="Emailid" value="san111@screenit.io"/>
+    <parameter name="Emailid" value="san12@screenit.io"/>
     <parameter name="jobdescription" value="testing"/>
     <parameter name="jobdescription_1" value="testing"/>
     <parameter name="jobdescription_2" value="testing"/>

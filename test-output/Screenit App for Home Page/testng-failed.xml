@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Screenit App for Home Page]">
   <test thread-count="5" name="Homepage Test Cases for postive and negative flow(failed)">
-    <parameter name="Emailid" value="san111@screenit.io"/>
+    <parameter name="Emailid" value="san12@screenit.io"/>
     <parameter name="keyskill" value="Core Java"/>
     <parameter name="title" value="Automation Testing"/>
     <parameter name="screenshotName_3" value="PagenationLists"/>
@@ -22,7 +22,7 @@
       <class name="com.Screenit.version3.Test.HomePageTestForPostiveAndNegativeFlow">
         <methods>
           <include name="setup"/>
-          <include name="CheckPostCardCountsFunctionality" invocation-numbers="0"/>
+          <include name="login" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.Screenit.version3.Test.HomePageTestForPostiveAndNegativeFlow -->

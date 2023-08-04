@@ -61,7 +61,7 @@ public class ForgotPasswordPage {
 
 	System.out.println(Url);
 
-	Assert.assertEquals(Url, "https://demo.screenit.io/#/forget_v3/password");
+	Assert.assertEquals(Url, "https://test.screenit.io/#/forget_v3/password");
 
 	}
 }

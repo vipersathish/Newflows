@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Screen app for filter search by status]">
-  <test name="search by status(failed)">
-    <parameter name="Emailid" value="san111@screenit.io"/>
-    <parameter name="screenshotName_2" value="verify sit score status"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Screen app for filter search by status]">
+  <test thread-count="5" name="search by status(failed)">
+    <parameter name="screenshotName_3" value="verify sit score status"/>
+    <parameter name="Emailid" value="san12@screenit.io"/>
+    <parameter name="screenshotName_2" value="Thirdsearchstatus"/>
     <parameter name="screenshotName" value="firstsearchstatus"/>
     <parameter name="text1" value="Scheduled"/>
     <parameter name="screenshotName_1" value="Secondsearchstatus"/>
-    <parameter name="text2" value="Open"/>
+    <parameter name="text2" value="New"/>
     <parameter name="text" value="Schedule Request Pending"/>
     <parameter name="flow" value="id"/>
     <parameter name="Password" value="Welcome@1"/>
@@ -15,7 +16,7 @@
     <classes>
       <class name="com.Screenit.version3.Test.FilterAndScoreTestForIdFlow">
         <methods>
-          <include name="checkFilterByStatusForUploadedResume"/>
+          <include name="checkFilterByStatusForUploadedResume" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>

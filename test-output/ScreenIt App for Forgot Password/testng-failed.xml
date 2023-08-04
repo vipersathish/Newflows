@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ScreenIt App for Forgot Password]">
+  <test thread-count="5" name="forgot password with existing mailid(failed)">
+    <parameter name="EmailId" value="san12@screenit.io"/>
+    <parameter name="screenshotName" value="forgotpasswordwithExistingUser"/>
+    <classes>
+      <class name="com.Screenit.version3.Test.ForgotPasswordTestForPostiveAndNegativeFlow">
+        <methods>
+          <include name="forgetPassword" invocation-numbers="0"/>
+          <include name="screenShotForFailedTestCase"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.Test.ForgotPasswordTestForPostiveAndNegativeFlow -->
+    </classes>
+  </test> <!-- forgot password with existing mailid(failed) -->
+  <test thread-count="5" name="forgot password with new mailid(failed)">
+    <parameter name="EmailId" value="san191@screenit.io"/>
+    <parameter name="screenshotName" value="forgotpasswordwithNewMailId"/>
+    <classes>
+      <class name="com.Screenit.version3.Test.ForgotPasswordTestForPostiveAndNegativeFlow">
+        <methods>
+          <include name="forgetPassword" invocation-numbers="0"/>
+          <include name="screenShotForFailedTestCase"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.Test.ForgotPasswordTestForPostiveAndNegativeFlow -->
+    </classes>
+  </test> <!-- forgot password with new mailid(failed) -->
+  <test thread-count="5" name="forgot password with wrong mailid(failed)">
+    <parameter name="EmailId" value="@screenit.io"/>
+    <parameter name="screenshotName" value="forgotpasswordwithWrongMaildId"/>
+    <classes>
+      <class name="com.Screenit.version3.Test.ForgotPasswordTestForPostiveAndNegativeFlow">
+        <methods>
+          <include name="forgetPassword" invocation-numbers="0"/>
+          <include name="screenShotForFailedTestCase"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Screenit.version3.Test.ForgotPasswordTestForPostiveAndNegativeFlow -->
+    </classes>
+  </test> <!-- forgot password with wrong mailid(failed) -->
+</suite> <!-- Failed suite [ScreenIt App for Forgot Password] -->

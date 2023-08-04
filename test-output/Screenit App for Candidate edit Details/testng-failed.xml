@@ -3,7 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Screenit App for Candidate edit Details]">
   <test thread-count="5" name="Edit candidate details(failed)">
     <parameter name="candiPhoneno" value="06379015136"/>
-    <parameter name="Emailid" value="san111@screenit.io"/>
+    <parameter name="Emailid" value="san12@screenit.io"/>
     <parameter name="candiMailId_1" value=" "/>
     <parameter name="screenshotName_3" value="Edit candidatewithoutfilled data"/>
     <parameter name="screenshotName_2" value="EditCandidatewithvalidData"/>

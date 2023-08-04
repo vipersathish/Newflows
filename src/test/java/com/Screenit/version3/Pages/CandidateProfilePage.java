@@ -1070,7 +1070,9 @@ public class CandidateProfilePage {
 
 	}
 
-	public static void verifyShortlistedMessage() {
+	public static void verifyShortlistedMessage() throws InterruptedException {
+
+		Thread.sleep(1000);
 
 		WebElement message = DriverFunctions.getElementByXpath("//div[text()='Candidate Shortlisted Successfully']");
 
@@ -1179,7 +1181,7 @@ public class CandidateProfilePage {
 
 	public static void clickShortlistedTabWithRefresh() throws InterruptedException {
 
-		Thread.sleep(20000);
+		Thread.sleep(40000);
 
 		DriverFunctions.driver.navigate().refresh();
 
@@ -1197,8 +1199,8 @@ public class CandidateProfilePage {
 
 	}
 
-public static void verifyScheduleReInitiatedStatus(){
-		
+	public static void verifyScheduleReInitiatedStatus() {
+
 		try {
 
 			Thread.sleep(2000);
@@ -1211,14 +1213,135 @@ public static void verifyScheduleReInitiatedStatus(){
 
 			Assert.assertEquals(status2.trim(), "Schedule ReInitiated");
 
-			Reporter.log("the status should be " + "-------"+status2);
+			Reporter.log("the status should be " + "-------" + status2);
 
 		} catch (Exception e) {
 
 			Reporter.log("schedule Reintiated status is not showing" + "----" + e);
 			// TODO: handle exception
 		}
+
+	}
+
+	public static void clickXButton() {
+
+		DriverFunctions.getElementByXpath("//i[@class='fa fa-times']").click();
+
+	}
+
+	public static void verifyCancelledStatus() {
+
+		try {
+
+			Thread.sleep(2000);
+
+			WebElement statustext2 = DriverFunctions.getElementByXpath("//span[text()=' Cancelled ']");
+
+			String status2 = statustext2.getText();
+
+			System.out.println(status2);
+
+			Assert.assertEquals(status2.trim(), "Cancelled");
+
+			Reporter.log("the status should be " + "-------" + status2);
+
+		} catch (Exception e) {
+
+			Reporter.log("cancelled status is not showing" + "----" + e);
+			// TODO: handle exception
+		}
+
+	}
+
+	public static void clickRescheduleWithDropdown(String text) throws InterruptedException {
 		
-}
+		Thread.sleep(2000);
+
+		DriverFunctions.getElementByXpath("//a[text()=' Re-Schedule ']").click();
+
+		Thread.sleep(2000);
+
+		List<WebElement> lists = DriverFunctions.getElementsByXpath("(//div[@class='dropdown-menu logmenu'])[2]//a");
+
+		for (int i = 0; i < lists.size(); i++) {
+
+			String data = lists.get(i).getText();
+
+			if (data.equals(text)) {
+
+				lists.get(i).click();
+			}
+
+		}
+
+	}
+
+	public static void verifyRescheduleInitiatedStatus() {
+
+		try {
+
+			Thread.sleep(2000);
+
+			WebElement statustext2 = DriverFunctions.getElementByXpath("//a[text()='Reschedule Initiated ']");
+
+			String status2 = statustext2.getText();
+
+			System.out.println(status2);
+
+			Assert.assertEquals(status2.trim(), "Reschedule Initiated");
+
+			Reporter.log("the status should be " + "-------" + status2);
+
+		} catch (Exception e) {
+
+			Reporter.log("reschedule initated status is not showing" + "----" + e);
+			// TODO: handle exception
+		}
+
+	}
+
+	public static void clickViewHistory() throws InterruptedException {
+
+		Thread.sleep(2000);
+
+		DriverFunctions.getElementByXpath("//a[text()=' View History ']").click();
+
+		WebElement table = DriverFunctions.getElementByXpath("//table[@id='example1']");
+
+		List<WebElement> row = table.findElements(By.tagName("tr"));
+
+		for (int i = 0; i < row.size(); i++) {
+
+			List<WebElement> col = row.get(i).findElements(By.tagName("td"));
+
+			for (int j = 0; j < col.size(); j++) {
+
+				String data = col.get(j).getText();
+
+				System.out.print(data + " ");
+
+				Reporter.log("All the rounds schedule details and sit score" + data + "   ");
+
+			}
+			System.out.println();
+
+		}
+
+		String score = DriverFunctions.getElementByXpath("//table[@id='example1']//tr").getText();
+	
+		DriverFunctions.getElementByXpath("(//button[text()='Ok'])[3]").click();
+		
+		String orgscore = 	   DriverFunctions.getElementByXpath("(//div[@class='status col-mod-2']//a)[1]").getText();
+
+		if(score.equals(orgscore)){
+			
+			Reporter.log("sit score matched recent score"+"----"+"Pass");
+		}
+		
+		Thread.sleep(3000);
+
+	}
+	
+	
 
 }

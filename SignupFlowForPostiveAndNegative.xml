@@ -7,9 +7,9 @@
   
 
  
- <parameter name= "Emailid"  value = "san910@screenit.io" />
+ <parameter name= "Emailid"  value = "sana123@screenit.io" />
  
- <parameter name = "mobilenumber"  value = "06089015131"/>
+ <parameter name = "mobilenumber"  value = "06089915131"/>
  
  <parameter name="screenshotName" value="SignuppagewithValidEmailAndMobileNumber"/>
  
@@ -62,7 +62,7 @@
    <test  name="Screenit Signup Already Existing User">
   
 
- <parameter name= "Emailid"  value = "san111@screenit.io" />
+ <parameter name= "Emailid"  value = "san12@screenit.io" />
  
  <parameter name = "mobilenumber"  value = "09849393746"/>
  

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Screenit app for LoginPage]">
-  <test thread-count="5" name="Screenit Valid email and valid password(failed)">
-    <parameter name="Emailid" value="san111@screenit.io"/>
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Screenit app for LoginPage]">
+  <test name="Screenit Valid email and valid password(failed)">
+    <parameter name="Emailid" value="san12@screenit.io"/>
     <parameter name="screenshotName" value="LoginPagePostivescreenshotWithValidEmailidAndPassword"/>
     <parameter name="Password" value="Welcome@1"/>
     <classes>

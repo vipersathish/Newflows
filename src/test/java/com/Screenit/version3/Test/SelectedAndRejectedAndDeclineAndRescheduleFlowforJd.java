@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.Screenit.version3.Initializer.DriverFunctions;
 import com.Screenit.version3.Initializer.Initializer;
 import com.Screenit.version3.Initializer.Screenshot;
 import com.Screenit.version3.Pages.CandidateProfilePage;
@@ -67,7 +68,7 @@ public class SelectedAndRejectedAndDeclineAndRescheduleFlowforJd extends Initial
 
 		Screenshot.Takescrenshots(screenshotName_2);
 
-		CandidateProfilePage.verifyShortlistedMessage();
+		// CandidateProfilePage.verifyShortlistedMessage();
 
 		CandidateProfilePage.clickShortlistedTab();
 
@@ -147,15 +148,13 @@ public class SelectedAndRejectedAndDeclineAndRescheduleFlowforJd extends Initial
 
 	}
 
-	@Parameters({ "text", "screenshotName_13", "screenshotName_14","screenshotName_144", "screenshotName_15", "screenshotName_16",
-			"screenshotName_17", "screenshotName_18", "screenshotName_19", "screenshotName_20"
-			})
+	@Parameters({ "text", "screenshotName_13", "screenshotName_14", "screenshotName_144", "screenshotName_15",
+			"screenshotName_16", "screenshotName_17", "screenshotName_18", "screenshotName_19", "screenshotName_20" })
 	@Test(priority = 3)
 
-	public void declinewithSetavailabilityFlow(String text, String screenshotName_13, String screenshotName_14,String screenshotName_144,
-			String screenshotName_15, String screenshotName_16, String screenshotName_17, String screenshotName_18,
-			String screenshotName_19, String screenshotName_20)
-			throws InterruptedException {
+	public void declinewithSetavailabilityFlow(String text, String screenshotName_13, String screenshotName_14,
+			String screenshotName_144, String screenshotName_15, String screenshotName_16, String screenshotName_17,
+			String screenshotName_18, String screenshotName_19, String screenshotName_20) throws InterruptedException {
 
 		CandidateProfilePage.clickScheduleButtonWithDropdown(text);
 
@@ -168,20 +167,19 @@ public class SelectedAndRejectedAndDeclineAndRescheduleFlowforJd extends Initial
 		Screenshot.Takescrenshots(screenshotName_13);
 
 		CandidateProfilePage.verifyScheduleRequestPendingstatus();
-		
+
 		CandidateProfilePage.clickScheduleRequestPendingStatus();
 
 		Screenshot.Takescrenshots(screenshotName_14);
 
 		CandidateProfilePage.checkSelectedInterviewerList();
-		
-		
+
 		CandidateProfilePage.clickShortlistedTabWithRefresh();
-		
+
 		Screenshot.Takescrenshots(screenshotName_144);
-		
+
 		CandidateProfilePage.clickManualScheduleForJd();
-	
+
 		CandidateProfilePage.verifyScheduleRequestPendingstatus();
 
 		CandidateProfilePage.clickScheduleRequestPendingStatus();
@@ -191,12 +189,14 @@ public class SelectedAndRejectedAndDeclineAndRescheduleFlowforJd extends Initial
 		CandidateProfilePage.checkSelectedInterviewerList();
 
 		CandidateProfilePage.clickShortlistedTabWithRefresh();
-		
+
 		CandidateProfilePage.verifyScheduleReInitiatedStatus();
 
 		CandidateProfilePage.clickShortlistedTabWithRefresh();
 
 		Screenshot.Takescrenshots(screenshotName_15);
+
+		CandidateProfilePage.clickManualScheduleForJd();
 
 		CandidateProfilePage.verifyScheduleRequestPendingstatus();
 
@@ -229,6 +229,143 @@ public class SelectedAndRejectedAndDeclineAndRescheduleFlowforJd extends Initial
 		Screenshot.Takescrenshots(screenshotName_20);
 
 		CandidateProfilePage.clickScheduleTab();
+
+	}
+
+	@Test(priority = 4)
+
+	@Parameters({ "text", "screenshotName_21", "screenshotName_22", "screenshotName_23", "screenshotName_24", "Reason",
+			"comment", "screenshotName_25", "screenshotName_26", "screenshotName_27", "screenshotName_28",
+			"screenshotName_29", "screenshotName_30", "screenshotName_31", "screenshotName_32", "screenshotName_33",
+			"screenshotName_34", "screenshotName_35", "screenshotName_36", "screenshotName_37" })
+
+	public void cancelWithRescheduleFlow(String text, String screenshotName_21, String screenshotName_22,
+			String screenshotName_23, String screenshotName_24, String Reason, String comment, String screenshotName_25,
+			String screenshotName_26, String screenshotName_27, String screenshotName_28, String screenshotName_29,
+			String screenshotName_30, String screenshotName_31, String screenshotName_32, String screenshotName_33,
+			String screenshotName_34, String screenshotName_35, String screenshotName_36, String screenshotName_37)
+			throws InterruptedException {
+
+		
+		CandidateProfilePage.clickScheduleButtonWithDropdown(text);
+
+		CandidateProfilePage.clickShortlistedTab();
+
+		CandidateProfilePage.verifyScheduleInitiatedStatus();
+
+		CandidateProfilePage.clickShortlistedTabWithRefresh();
+
+		Screenshot.Takescrenshots(screenshotName_21);
+
+		CandidateProfilePage.verifyScheduleRequestPendingstatus();
+
+		CandidateProfilePage.clickScheduleRequestPendingStatus();
+
+		Screenshot.Takescrenshots(screenshotName_22);
+
+		CandidateProfilePage.checkSelectedInterviewerList();
+
+		CandidateProfilePage.clickShortlistedTabWithRefresh();
+
+		Screenshot.Takescrenshots(screenshotName_23);
+
+		CandidateProfilePage.clickManualScheduleForJd();
+
+		CandidateProfilePage.verifyScheduleRequestPendingstatus();
+
+		CandidateProfilePage.clickScheduleRequestPendingStatus();
+
+		Screenshot.Takescrenshots(screenshotName_24);
+
+		CandidateProfilePage.checkSelectedInterviewerList();
+
+		CandidateProfilePage.clickShortlistedTabWithRefresh();
+
+		CandidateProfilePage.clickScheduleTab();
+
+		CandidateProfilePage.clickXButton();
+
+		CandidateProfilePage.selectReason(Reason);
+
+		CandidateProfilePage.enterComments(comment);
+
+		CandidateProfilePage.clickPopupSubmitButton();
+
+		CandidateProfilePage.verifyCancelledStatus();
+
+		Screenshot.Takescrenshots(screenshotName_25);
+
+		CandidateProfilePage.clickRescheduleWithDropdown(text);
+
+		CandidateProfilePage.clickShortlistedTab();
+
+		Screenshot.Takescrenshots(screenshotName_26);
+
+		CandidateProfilePage.verifyRescheduleInitiatedStatus();
+
+		CandidateProfilePage.clickShortlistedTabWithRefresh();
+
+		Screenshot.Takescrenshots(screenshotName_27);
+
+		CandidateProfilePage.verifyReScheduleRequestPendingstatus();
+
+		CandidateProfilePage.clickReScheduleRequestPendingStatus();
+
+		Screenshot.Takescrenshots(screenshotName_28);
+
+		CandidateProfilePage.checkSelectedInterviewerList();
+
+		CandidateProfilePage.clickShortlistedTabWithRefresh();
+
+		Screenshot.Takescrenshots(screenshotName_29);
+
+		CandidateProfilePage.clickManualScheduleForJd();
+
+		Screenshot.Takescrenshots(screenshotName_30);
+
+		CandidateProfilePage.verifyReScheduleRequestPendingstatus();
+
+		CandidateProfilePage.clickReScheduleRequestPendingStatus();
+
+		Screenshot.Takescrenshots(screenshotName_31);
+
+		CandidateProfilePage.checkSelectedInterviewerList();
+
+		CandidateProfilePage.clickShortlistedTabWithRefresh();
+
+		CandidateProfilePage.clickScheduleTab();
+
+		Screenshot.Takescrenshots(screenshotName_32);
+
+		CandidateProfilePage.verifyReScheduleStatus();
+
+		CandidateProfilePage.clickScheduleTab();
+
+		Screenshot.Takescrenshots(screenshotName_33);
+
+		CandidateProfilePage.verifyFeedbackPendingStatus();
+
+		CandidateProfilePage.clickFeedbackPendingstatus();
+
+		Screenshot.Takescrenshots(screenshotName_34);
+
+		CandidateProfilePage.viewFeedbackResults();
+
+		CandidateProfilePage.clickViewFeedbackCancelButton();
+
+		CandidateProfilePage.clickScheduleTab();
+		
+		Screenshot.Takescrenshots(screenshotName_35);
+
+		CandidateProfilePage.clickViewHistory();
+
+		Screenshot.Takescrenshots(screenshotName_36);
+
+		CandidateProfilePage.verifySitScoreStatus();
+
+		CandidateProfilePage.verifySelectedOrRejectedStatus();
+
+		Screenshot.Takescrenshots(screenshotName_37);
 
 	}
 

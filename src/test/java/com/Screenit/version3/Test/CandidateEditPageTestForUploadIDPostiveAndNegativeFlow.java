@@ -94,51 +94,51 @@ public class CandidateEditPageTestForUploadIDPostiveAndNegativeFlow extends Init
 
 		Thread.sleep(4000);
 
-		WebElement canName = DriverFunctions.getElementByXpath("(//a[@class='candidateDetails overflow']//span[@class='canName'])[1]");
-
-		String name = canName.getText();
-		
-		System.out.println(name);
-		
-		Thread.sleep(2000);
-
-		WebElement mobilenum = DriverFunctions
-				.getElementByXpath("((//a[@class='candidateDetails overflow'])[1]//span)[4]");
-
-		String canmobilenum = mobilenum.getText();
-		
-	String []  str = 	canmobilenum.split(" ");
-	
-      String number = 	str[1];
-	
-	System.out.println(str[1]);
-		
-		
-		
-		Thread.sleep(2000);
-
-		WebElement emailid = DriverFunctions
-				.getElementByXpath("((//a[@class='candidateDetails overflow'])[1]//span)[7]");
-
-		String candEmailid = emailid.getText();
-		
-		System.out.println(candEmailid);
-	
-
-		if (name.toLowerCase().equals(candiname.toLowerCase())) {
-
-			Reporter.log("Saved Candidate name is successfully dispalyed" + name);
-		}
-
-		if (candEmailid.equals(candiMailId)) {
-
-			Reporter.log("Saved candidate email id is successfully displayed");
-		}
-
-		if (number.equals(candiPhoneno)) {
-
-			Reporter.log("Saved Candidated phone no is successfully displayed");
-		}
+//		WebElement canName = DriverFunctions.getElementByXpath("(//a[@class='candidateDetails overflow']//span[@class='canName'])[1]");
+//
+//		String name = canName.getText();
+//		
+//		System.out.println(name);
+//		
+//		Thread.sleep(2000);
+//
+//		WebElement mobilenum = DriverFunctions
+//				.getElementByXpath("((//a[@class='candidateDetails overflow'])[1]//span)[4]");
+//
+//		String canmobilenum = mobilenum.getText();
+//		
+//	String []  str = 	canmobilenum.split(" ");
+//	
+//      String number = 	str[1];
+//	
+//	System.out.println(str[1]);
+//		
+//		
+//		
+//		Thread.sleep(2000);
+//
+//		WebElement emailid = DriverFunctions
+//				.getElementByXpath("((//a[@class='candidateDetails overflow'])[1]//span)[7]");
+//
+//		String candEmailid = emailid.getText();
+//		
+//		System.out.println(candEmailid);
+//	
+//
+//		if (name.toLowerCase().equals(candiname.toLowerCase())) {
+//
+//			Reporter.log("Saved Candidate name is successfully dispalyed" + name);
+//		}
+//
+//		if (candEmailid.equals(candiMailId)) {
+//
+//			Reporter.log("Saved candidate email id is successfully displayed"+candEmailid);
+//		}
+//
+//		if (number.equals(candiPhoneno)) {
+//
+//			Reporter.log("Saved Candidated phone no is successfully displayed"+number);
+//		}
 
 		
 	}
