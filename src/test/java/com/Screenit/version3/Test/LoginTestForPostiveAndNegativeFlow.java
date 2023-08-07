@@ -35,17 +35,7 @@ import com.Screenit.version3.Pages.LoginPage;
 
 public class LoginTestForPostiveAndNegativeFlow extends Initializer {
 	
-//	
-//	static ExtentTest test;
-//	static ExtentReports report;
-	
-//	@BeforeClass
-//	
-//	public static void startTest(){
-//		
-//		report = new ExtentReports("report\\screenit.html");
-//		test = report.startTest("ScreenitTestReport");
-//	}
+
 
 	@BeforeMethod
 
@@ -82,7 +72,7 @@ public class LoginTestForPostiveAndNegativeFlow extends Initializer {
 		
 		if(Url.equals("https://demo.screenit.io/#/dashboard_v3")){
 			
-		//	test.log(LogStatus.PASS, "Navigated to the specified URL");
+		
 			
 			System.out.println("login successfully with valid creditals"+"----"+Url);
 			
@@ -98,7 +88,7 @@ public class LoginTestForPostiveAndNegativeFlow extends Initializer {
 			
 			Assert.assertEquals(message,"Invalid Credentials");
 			
-		//	test.log(LogStatus.FAIL, "TestFailed");
+		
 			
 			Reporter.log("Successfully enter the wrong creditals getting message from loginpage"+"---"+message);
 		}
@@ -129,15 +119,7 @@ public class LoginTestForPostiveAndNegativeFlow extends Initializer {
         return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
     }
     
-//    @AfterClass
-//    
-//    public static void endTest() throws EmailException
-//    {
-//    	
-//    report.endTest(test);
-//    report.flush();
-//    
-  
+
      
     
     
