@@ -6,8 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.mail.EmailException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -32,9 +31,7 @@ import org.testng.annotations.Test;
 import com.Screenit.version3.Initializer.Initializer;
 import com.Screenit.version3.Initializer.Screenshot;
 import com.Screenit.version3.Pages.LoginPage;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+
 
 public class LoginTestForPostiveAndNegativeFlow extends Initializer {
 	
