@@ -30,7 +30,7 @@ public class Screenshot extends Initializer{
 					
 					FileUtils.copyFile(screenshot, screen);
 					
-					 Reporter.log("<a href='"+ screen.getAbsolutePath() + "'> <img src='"+ screen.getAbsolutePath() + "' height='100' width='100'/> </a>");
+				//	 Reporter.log("<a href='"+ screen.getAbsolutePath() + "'> <img src='"+ screen.getAbsolutePath() + "' height='100' width='100'/> </a>");
 	                
 				//	 System.out.println( src);
 					 
