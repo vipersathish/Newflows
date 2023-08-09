@@ -95,22 +95,22 @@ public class LoginTestForPostiveAndNegativeFlow extends Initializer {
 	
 		}
 	
-	@AfterMethod
+	// @AfterMethod
 				
-			public static String capture() throws IOException {
+	// 		public static String capture() throws IOException {
 		
 		
 	
-			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	// 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			
-			File Dest = new File("C:\\Users\\TTS-USER\\workspace\\com.TestngFramework.ScreenitV3\\ScreenShots\\" + System.currentTimeMillis()
-			+ ".png");
+	// 		File Dest = new File("C:\\Users\\TTS-USER\\workspace\\com.TestngFramework.ScreenitV3\\ScreenShots\\" + System.currentTimeMillis()
+	// 		+ ".png");
 			
-			String errflpath = Dest.getAbsolutePath();
+	// 		String errflpath = Dest.getAbsolutePath();
 			
-			FileUtils.copyFile(scrFile, Dest);
+	// 		FileUtils.copyFile(scrFile, Dest);
 			
-			return errflpath;
+	// 		return errflpath;
 
 	}	
 
